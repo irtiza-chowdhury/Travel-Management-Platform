@@ -1,0 +1,36 @@
+.comingsoon{
+    padding: 60px 0;
+    // height: 500px;
+    // background: $light_green;
+
+    &__card{
+        height: 300px;
+        width: 70%;
+        margin: auto;
+        border: 1px solid $light_ferza;
+        padding: 0;
+        outline: none;
+        box-shadow: 0 0 6px 3px $light_ferza;
+        border-radius: 4px;
+
+        &-body{
+            // padding: 0 !important;
+            // margin: 0 !important;
+            border-radius: 4px;
+            &-title{
+                @include flexcenter;
+                @include secondary_heading;
+                font-weight: 500;
+                text-transform: capitalize;
+                text-align: center;
+                color: $drak_violet;
+                background: $white;
+                border-radius: 4px;
+                @media (max-width:767.98px){
+                    font-size: 32px;
+                }
+            }
+        }
+        
+    }
+}

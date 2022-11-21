@@ -1,0 +1,309 @@
+@import "../config/variable";
+@import "../utilities/utilities";
+@import "../config/mixin";
+
+// .banner{
+//     height: 250px;
+//     font-family: Roboto;
+
+//     &__header{
+//         @include flexcenter;
+//         font-size: 44px;
+//         padding-top: 100px;
+//         font-weight: 700
+//     }
+//     &__components{
+//         @include flexcenter;
+//         gap: 20px;
+//         padding-top: 55px;
+
+//         &-item{
+//             text-decoration: none;
+//             color: $black !important;
+            
+//             &:hover{
+//                 border-bottom: 2px solid $black;
+//             }
+
+//             &--active{
+//                 color: $black !important;
+//                 text-decoration: none;
+//                 border-bottom: 2px solid $black;
+//             }
+//         }
+//     }
+
+// }
+
+.mission{
+    padding: 100px 0;
+    font-family: Roboto;
+
+    &__main{
+        &-header{
+            font-size: 40px;
+            font-weight: 700;
+            @media (max-width:767.98px){
+                font-size: 32px;
+            }
+        }
+        &-text{
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    &__text{
+        font-size: 18px;   
+        font-weight: 300;
+    }
+}
+
+.journey{
+    font-family: Roboto;
+    padding: 100px 0;
+    color: $white;
+    position: relative;
+    z-index: 1;
+    &__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        &-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: $accomplish_color;
+            opacity: 0.7;
+            // z-index: -1;
+        }
+    }
+    
+
+    &__main{
+        &-header{
+            font-size: 40px;
+            font-weight: 700;
+            @media (max-width:767.98px){
+                font-size: 32px;
+            }
+        }
+        &-text{
+            font-weight: 300;
+            font-size: 18px;
+        }
+        &-wraper{
+            margin: 0 auto;
+            width: 250px;
+            padding-top: 300px;            
+
+            @media (max-width:767.98px){
+                padding-top: 10px;               
+            }
+            &-image{               
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+    &__component{
+        &-item{
+            font-size: 18px;
+            &-line{
+                &-dot{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: $white;
+                    margin-top: 8px;
+                }
+                &-dashed{
+                    width: 6px;
+                    border-right: 2px dashed $white;
+                    height: 100%;
+                }
+            }
+            &-text{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.comment{
+    padding: 100px 0;
+    background: $light_orange;
+    color: $white;
+    font-family: Roboto;
+    &__image{
+        width:200px;
+        // margin: 0 auto;
+        height: 200px;
+        border: 2px solid $white;
+        padding: 0;
+        margin-right: 70px;
+        @media (max-width:767.98px){
+            // margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__text{
+        padding: 0;
+        &-details{
+            font-size: 18px;
+            font-weight: 300;
+            
+        }
+        &-name{
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: right;
+        }
+    }
+}
+
+.principle{
+    font-family: Roboto;
+    z-index: 1;
+    color: $white;
+    position: relative;
+    z-index: 1;
+
+    &__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        &-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: $accomplish_color;
+            opacity: 0.8; 
+        }
+
+    }
+
+
+    &__main{
+        &-title{
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 20px;
+            @media (max-width:767.98px){
+                font-size: 32px;
+            }
+        }
+        &-text{
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+    }
+    &__details{
+        &-item{
+            font-size: 18px;
+            padding-bottom: 20px;
+            line-height: 1.7;
+            &-title{
+                font-weight: 500;
+            }
+            &-text{
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.team{
+    background: $light_green;
+    color: $black;
+    padding: 60px 0;
+    font-family: Roboto;
+
+    &__title{
+        @include flexcenterwrap;
+        font-size: 40px;
+        font-weight: 700;
+        @media (max-width:767.98px){
+            font-size: 32px;
+        }
+    }
+    &__component{
+        @include flexcenterwrap;
+        gap: 30px;
+        margin-top: 30px;
+
+        &-item{
+            &-image{
+                width: 150px;
+                height: 120px;
+                border: 4px solid $white;
+                box-shadow: 0px 0px 4px $light_gray, 0px 0px 8px $gray;
+                padding: 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-name{
+                @include flexcenter;
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+            &-post{
+                @include flexcenter;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.question{
+    padding: 60px 0;
+    font-family: Roboto;
+
+    &__title{
+        font-size: 48px;
+        font-weight: 500;
+        @media (max-width:767.98px){
+            font-size: 32px;
+        }
+        
+    }
+    &__text{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+        text-align: left;
+        // padding-left: 20px;
+    }
+}

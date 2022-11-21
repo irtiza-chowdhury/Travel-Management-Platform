@@ -1,0 +1,32 @@
+// Config scss
+@import "config/mixin";
+@import "config/reset";
+@import "config/variable";
+@import "config/font";
+
+
+// utilities
+@import "utilities/utilities";
+@import "utilities/offcanvas";
+
+// pages scss
+@import "pages/home";
+@import "pages/about_us";
+@import "pages/faqs";
+@import "pages/tutorial";
+@import "pages/glossary";
+@import "pages/career";
+@import "pages/pricePlatform";
+@import "pages/media";
+@import "pages/accountCreationform";
+@import "pages/formPersonalinfo";
+@import "pages/formPassword";
+@import "pages/formSignIn";
+@import "pages/formForget";
+@import "pages/settings";
+@import "pages/dashboard";
+@import "pages/deshboard_news";
+@import "pages/privacy";
+@import "pages/comingsoon";
+
+

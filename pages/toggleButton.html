@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toogle</title>
+    <link rel="stylesheet" href="../css/toogleButton.css">
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+    
+    
+</head>
+<body>
+
+    <div class="input_container">
+        <form name="formValidation" id="formValidation" onsubmit="return false">
+            <div class="input-row">
+                <div class="formItem__body-item-name">Organizational Name *</div>
+                <input id="Name" type="text" name="name" placeholder="Name*" required>
+            </div>
+            <div class="input-row">
+                <div class="formItem__body-item-hints">
+                    Your email is used to make the first user account and for email confirmation.
+                </div>
+                <div class="formItem__body-item-name">Email *</div>
+                <input id="Email" type="email" name="email" placeholder="Email*" required>
+            </div>
+            <div class="input-row">
+                <input id="Phone" type="text" name="phone" placeholder="Phone*" required>
+            </div>
+            <div class="input-row">
+                <div class="formItem__body-item-hints ">
+                    Default currency can’t be changed later on.
+                </div>
+                <div class="formItem__body-item-name">Default Currency *</div>
+                <!-- <input id="Subject" type="text" name="subject" placeholder="Subject*" required> -->
+                <input list="currency" class="formItem__body-item-input" type="text" id="Subject" name="subject" placeholder="select a option .." required/>
+                                <datalist id="currency">
+                                  <option value="US dollar">
+                                  <option value="Euro">
+                                  <option value="Derham">
+                                </datalist>
+            </div>
+            <div class="input-row">
+                <textarea id="Message" name="formMessage" placeholder="Message*" required></textarea>
+            </div>
+            <div class="text-center">
+                <!-- <input id="btnSubmit" type="submit" value="Submit" > -->
+                <a href="accountCreatforn.html">
+                    <button id="btnSubmit" type="submit" onclick="overflow()"> Submit</button>
+                </a>
+                <!-- onclick="location.href='accountCreatforn.html' " -->
+                
+            </div>
+        </form>
+        <div id="overFlow" class="overflow">
+            <div class="success" id="Success">
+                <div class="scroller"> 
+                    <div class="success-title">
+                        <img src="../assets/image/thanks.png" alt="">
+                    </div>
+                    <div class="success-text">Your message is succesfully submitted</div>
+                </div>
+
+            </div>
+            <!-- <div class="danger" id="Danger">
+                The * marked fields are required to fill
+            </div> -->
+        </div>
+    </div>
+
+
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+    <script src="../js/formValidate.js"></script>
+   
+</body>
+</html>

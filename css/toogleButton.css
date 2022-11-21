@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    margin: 200px 100px;
+    background: #4b73a7;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.input_container{
+    padding: 30px 20px;
+    width: 600px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.3);
+    border: 10px solid #41b9ff;
+    position: relative;
+}
+.input-row{
+    margin-bottom: 12px;
+}
+.input-row input:not([type="submit"]),
+.input-row textarea{
+    width: 100%;
+    margin: 0 0 3px;
+    background-color: #d6d6d6;
+    padding: 10px 15px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: 0;
+    transition: all 0.5s ease-out;
+}
+.input-row textarea{
+    height: 100px;
+    resize: none;
+}
+.input-row input:not([type="submit"]):focus,
+.input-row textarea:focus{
+    border-color: #41b9ff;
+}
+.input_container button{
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 30px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: #2793d2;
+    color: #fff;
+    border: 0;
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+}
+.input_container button:hover{
+    background: #000;
+}
+label.error{
+    font-size: 14px;
+    color: #f00;
+}
+.success{
+    display: none;
+    color: #008000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6;
+    
+    /* animation: animate 2s linear; */
+    /* transition: 3s ease ; */
+    /* transition: bottom to top, 2s linear; */
+    overflow:hidden;
+    /* -webkit-transition: all 2s linear; */
+    transition-property: inline-block;
+    transition: all 3s ease;
+    top: 0;
+    left: 0;
+    bottom: auto;
+}
+.success::after{
+    position: relative;
+}
+.success .scroller{
+    width: 65%;
+    height: 50%;
+    background: #d6d6d6;
+    /* 
+    transition: all 2s ease; */
+    animation: animate 2s linear;
+    position: absolute;
+    left: 110px;
+}
+@keyframes animate {
+    0% {
+      left: 110px;
+      top: 100%;
+    }
+    
+    50% {
+      left: 110px;
+      top: 50%;
+    }
+    100% {
+      left: 110px;
+      top: 0;
+    }
+  }
+
+  .success-title{
+    width: 400px;
+  }
+  .success-title img{
+    width: 100%;
+  }
+  .success-text{
+    text-align: center;
+    font-size: 28px;
+
+  }
+.danger{
+    display: none;
+    color: #f00;
+}
+

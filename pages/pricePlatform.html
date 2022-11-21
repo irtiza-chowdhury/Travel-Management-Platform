@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Plan</title>
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- header section starts -->
+    <section id="Header" class="header">
+      <nav class="navbar navbar-expand-md py-0">
+          <div class="container-fluid header__navbar ">
+          
+          <!-- travel image for upward of tab -->
+          <a id="logoTitle" class="navbar-brand header__navbar-title d-none d-md-block d-lg-block" href="../index.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web"></a>
+          
+          <!-- offcanvas button start -->
+          <button class="navbar-toggler header__navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <span class="navbar-toggler-icon"></span> 
+          </button>
+          <!-- offcanvas button end -->
+
+          <!-- offcanvas menu start -->
+          <div class="offcanvas offcanvas-start d-block d-sm-block d-md-none header__offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+              <h5 class="offcanvas-title header__navbar-title " id="offcanvasExampleLabel">
+                  <img class="img-fluid" src="../assets/image/travel.png" alt="">
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body overflow-visible">
+                  <ul class="navbar-nav header__navbar-content ">
+                      <li class="nav-item">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle header__navbar-content-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pricing
+                              </a>
+                              <ul class="dropdown-menu">
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Resources
+                              </a>
+                              <ul class="dropdown-menu">
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Company
+                              </a>
+                              <ul class="dropdown-menu">
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                              </ul>
+                          </div>
+                      </li>
+
+                  </ul>
+              
+              </div>
+              <div class="header__offcanvas-button">
+                  <form class="d-flex header__navbar-button" role="search">
+                      <a href="./accountCreatforn.html" class="header__navbar-button-content--primary">Create Account</a>
+                      <a href="./formSignin.html" class="header__navbar-button-content--secondary">Sign In</a>
+                  </form>
+              </div>
+          </div>
+          <!-- offcanvas menu end -->
+
+          <!-- travel image for lower than tab -->
+          <a class="navbar-brand header__navbar-title--dashboard d-sm-block d-md-none d-lg-none d-xlg-none" href="../index.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web" id="logoTitleMobile"></a>
+          
+          <!-- navbar items -->
+          <div class="collapse navbar-collapse header__navbar-collapse d-none d-md-none d-lg-block" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0  text-end header__navbar-content" id="menuOptions">
+              
+
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemPrice">
+                  Pricing
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                  
+                  </ul>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemResource">
+                  Resources
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemCompany">
+                  Company
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                  </ul>
+              </li>
+              </ul>
+              <form class="d-flex header__navbar-button" role="search">
+                  <!-- language buttone from tab to upward-->
+                  <li class="position-relative list-unstyled active dropdown">
+                      <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="header__navbar-button-content--language" type="button"><img src="../assets/image/globe.svg" alt=""></button>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item header__navbar-button-content-item">EN English (GB)</li>
+                          <li class="dropdown-item header__navbar-button-content-item">EN English (US)</li>
+                      </ul>
+                      <div class="position-absolute top-100 name">Language</div>
+                  </li>
+              
+                  <a href="./accountCreatforn.html" class="header__navbar-button-content--primary">Create Account</a>
+                  <a href="./formSignin.html" class="header__navbar-button-content--secondary">Sign In</a>
+              
+              </form>
+
+                          
+          </div>
+          <!-- language buttone for mobile -->
+          <div>
+              <li class="position-relative list-unstyled active dropdown d-block d-sm-block d-md-none languageOption">
+                  <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="header__navbar-button-content--language-hide" type="button">
+                      <img src="../assets/image/globe.svg" alt="">
+                  </button>
+                  </a>
+                  <ul class="dropdown-menu">                 
+                      <li class="dropdown-item header__navbar-button-content-item">EN English (GB)</li>
+                      <li class="dropdown-item header__navbar-button-content-item">EN English (US)</li> 
+                  </ul>
+                  <div class="position-absolute top-100 name">Language</div>
+              </li> 
+          </div>
+
+      </nav>
+  </section>
+  <!-- header section end -->
+
+    <!-- help section start -->
+    <section class="help">
+        <div class="help__background">
+            <div class="help__background-image">
+              <img src="../assets/image/data_4-removebg-preview.png" alt="">
+            </div>
+          </div>
+        <div class="help__details">
+            <div class="help__details-title">
+                <div class="scroller">
+                <div><img class="help__details-title-image" src="../assets/image/data_4-removebg-preview.png" alt="glossary"></div> 
+                <div class="help__details-title-text"><span>Pricing</span></div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <!-- help section end -->
+
+    <!-- togglePlan section start -->
+    <section class="toggleplan">
+        <div class="container">
+            <div class="toggleplan__title">Choose the plan that fits your needs</div>
+            <div class="toggleplan__payment">
+              <div class="toggleplan__payment-permonth" id="payMonthly">
+                Pay month-to-month
+              </div>
+              <div class="toggleplan__payment-toggler" >
+                <div class="toggleplan__payment-toggler-button" id="toggleButton">
+                  <i class="indicator"></i>
+                </div>
+              </div>
+              <div class="toggleplan__payment-peryear" id="payYearly">
+                Subscribe for a year
+              </div>
+            </div>
+            <!-- monthly payments cards options start-->
+            <div class="toggleplan__basicpayment" id="monthlyPayment">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Free
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 0.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description"> 
+                        1 Subscription free
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">1</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">0</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Lite
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 34.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description">
+                        per user per month
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">2</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">1</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Growth
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 74.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description">
+                        per user per month
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">3</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">1h/mo</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">2</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Enterprise
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 97.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description">
+                        per user per month
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">5</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">3ho/mo</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">5</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- monthly payments cards options end-->
+
+            <!-- yearly payments cards options start-->
+            <div class="toggleplan__basicpayment" id="yearlyPayment">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Free
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 0.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description">
+                        1 Subscription free
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">1</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">0</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Lite
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 340.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description">
+                        per user per year
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">2</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">1</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Growth
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 740.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description">
+                        per user per year
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">3</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">1h/mo</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">2</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">-</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+                <div class=" col-12 col-md-6 col-lg-4 col-xl-3 main">
+                  <div class="card toggleplan__basicpayment-card">
+                    <div class="card-body toggleplan__basicpayment-card-content">
+                      <div class="toggleplan__basicpayment-card-content-offer">
+                        Enterprise
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-price">
+                        USD 940.0
+                      </div>
+                      <div class="toggleplan__basicpayment-card-content-description">
+                        per user per year
+                      </div>
+                      <ul class="toggleplan__basicpayment-card-content-details">
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Searches</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Advice</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Profiles</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Unlimited</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Subscription</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">5</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support on Visit</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Support by Phone</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">3ho/mo</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Links</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">5</span>
+                        </li>
+                        <li class="toggleplan__basicpayment-card-content-details-items">
+                          <span class="toggleplan__basicpayment-card-content-details-items-name">Provide Domain</span>
+                          <span class="toggleplan__basicpayment-card-content-details-items-value">Yes</span>
+                        </li>
+                      </ul>
+                      <a href="./formSignin.html" class="card-link toggleplan__basicpayment-card-content-button">Get Started</a>
+                    
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- yearly payments cards options end-->
+        </div>
+    </section>
+    <!-- togglePlan section end -->
+
+    <!-- platformplan section start -->
+    <section class="platformplan">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="platformplan__title">Halvah jelly beans soufflé icing liquorice.</div>
+            <ul class="platformplan__facilities list-unstyled">
+              <li class="platformplan__facilities-items">✓ Lorem, ipsum dolor.</li>
+              <li class="platformplan__facilities-items">✓ Muffin tart chocolate</li>
+              <li class="platformplan__facilities-items">✓ Chocolate cake gummi</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="platformplan__details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem magnam numquam, eius deleniti excepturi accusantium natus ex veritatis saepe eveniet officia nostrum reprehenderit error cum quaerat vel sequi vitae. Possimus enim doloremque, autem dignissimos placeat quos distinctio magnam doloribus?
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- platformplan section end -->
+
+    <!-- ouradvantages section start -->
+    <section class="ouradvantage">
+      <div class="ouradvantage__background">
+        <img class="ouradvantage__background-image" src="../assets/image/plane_air.jpg" alt="">
+      </div>
+      <div class="container">
+        <div class="ouradvantage__title">Our Attractive Facilities</div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="ouradvantage__subtitle">Cupcake Ipsam</div>
+            <ul class="ouradvantage__details list-unstyled">
+              <li class="ouradvantage__details-items">✓ Candy canes pie chocolate</li>
+              <li class="ouradvantage__details-items">✓ Sesame snaps sweet roll</li>
+              <li class="ouradvantage__details-items">✓ Pie danish chocolate cake </li>
+              <li class="ouradvantage__details-items">✓ Wafer sesame snaps toffee</li>
+              <li class="ouradvantage__details-items">✓ Candy canes pie chocolate</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="ouradvantage__subtitle">Lorem, ipsum.</div>
+            <ul class="ouradvantage__details list-unstyled">
+              <li class="ouradvantage__details-items">✗ Sesame snaps sweet roll</li>
+              <li class="ouradvantage__details-items">✗ Wafer sesame snaps toffee</li>
+              <li class="ouradvantage__details-items">✗ Candy canes pie chocolate</li>
+              <li class="ouradvantage__details-items">✗ Wafer sesame snaps toffee</li>
+              <li class="ouradvantage__details-items">✗ Candy canes pie chocolate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ouradvantages section end -->
+
+    <!-- platformbenefits section start -->
+    <section class="platformbenefits">
+      <div class="container">
+        <div class="platformbenefits__title">
+          Subscription benefits
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-12 platformbenefits__details">
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/card.png" alt="credit card">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem nobis unde voluptas iure blanditiis magnam facilis odio, enim nihil! Lorem ipsum dolor.
+              </div>
+            </div>
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/hand_shake_1.png" alt="hand shake">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quo repudiandae odit quam eum autem accusamus optio ea iusto molestiae laborum doloribus non hic modi!
+              </div>
+            </div>
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/price-list.png" alt="price list">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit amet consectetur.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quisquam beatae! Amet odit delectus quaerat deleniti dolorem. Dignissimos, sint odio?
+              </div>
+            </div>
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/global-network.png" alt="earth">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste magni ducimus placeat eaque delectus dolorem facere assumenda expedita, minus saepe non sint distinctio.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 platformbenefits__details">
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/graph_bar_1-removebg-preview.png" alt="garph bar">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit amet consectetur.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum explicabo sint, totam exercitationem deleniti beatae nulla harum inventore cum magnam.
+              </div>
+            </div>
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/headphone_white.png" alt="haedphone">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi placeat soluta deleniti cupiditate tempora laboriosam sit dolorum? Esse, aliquid voluptate!
+              </div>
+            </div>
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/laptop.png" alt="laptop">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis blanditiis voluptatem dolor quo nostrum tenetur esse quam! Ducimus voluptatum cupiditate reiciendis at!
+              </div>
+            </div>
+            <div class="platformbenefits__details-items">
+              <div class="platformbenefits__details-items-image">
+                <img src="../assets/image/trophy.png" alt="trophy">
+              </div>
+              <div class="platformbenefits__details-items-offer">
+                Lorem ipsum dolor sit amet consectetur.
+              </div>
+              <div class="platformbenefits__details-items-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laborum commodi eligendi, ea nesciunt architecto pariatur aperiam perspiciatis. Porro magnam quo enim? Aperiam, ipsum!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- platformbenefits section end -->
+
+    <!-- yourJourney section start -->
+    <section class="yourJourney">
+      <div class="container">
+          <div class="yourJourney__title">
+            Frequently asked pricing questions
+          </div>
+          <!-- <div class="yourJourney__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum mollitia veritatis voluptate quidem, error nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sapiente? Odio minus aut sapiente ducimus?
+          </div> -->
+          <div class="yourJourney__accordian">               
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item yourJourney__accordian-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed yourJourney__accordian-item-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Lorem ipsum dolor sit amet consectetur adipisicing.?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body yourJourney__accordian-item-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nobis ad. Quaerat alias placeat modi doloribus, temporibus animi, ducimus, non perferendis sint nobis dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, fugit?
+
+                          <!-- <a class="yourJourney__accordian-item-text-button" href="">Download</a> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item yourJourney__accordian-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed yourJourney__accordian-item-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Lorem ipsum dolor sit amet.?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body yourJourney__accordian-item-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit a inventore animi repudiandae voluptates molestiae, sunt consequuntur officiis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                          <!-- <a class="yourJourney__accordian-item-text-button" href="">Download</a> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item yourJourney__accordian-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed yourJourney__accordian-item-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body yourJourney__accordian-item-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugit a inventore animi repudiandae voluptates molestiae, sunt consequuntur officiis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor.
+
+                          <!-- <a class="yourJourney__accordian-item-text-button" href="">Download</a> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item yourJourney__accordian-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button class="accordion-button collapsed yourJourney__accordian-item-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body yourJourney__accordian-item-text">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste asperiores quisquam quasi molestiae at harum non est quaerat delectus minus!
+
+                          <!-- <a class="yourJourney__accordian-item-text-button" href="">Download</a> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item yourJourney__accordian-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button class="accordion-button collapsed yourJourney__accordian-item-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                          Lorem ipsum dolor lorem sit amet.?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body yourJourney__accordian-item-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, libero inventore ab eligendi ipsa est illo consequuntur, earum eum praesentium quibusdam porro vero deserunt ipsum vel rerum.
+                          <!-- <a class="yourJourney__accordian-item-text-button" href="">Download</a> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item yourJourney__accordian-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button class="accordion-button collapsed yourJourney__accordian-item-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                          Lorem ipsum dolor Lorem ipsum dolor sit amet.?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body yourJourney__accordian-item-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus et eveniet illum quo, modi cum neque incidunt ea, doloribus tempora optio, vitae delectus tenetur sapiente accusamus porro molestiae assumenda iste!
+
+                          <!-- <a class="yourJourney__accordian-item-text-button" href="">Download</a> -->
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </section>
+    <!-- yourJourney section end -->
+
+    <!-- pricecontct section start -->
+    <section class="pricecontct">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3 pricecontct__image">
+            <div class="pricecontct__image-item">
+              <img src="../assets/image/headphone_2.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-9">
+            <div class="pricecontct__details">
+              <div class="pricecontct__details-title">
+                Have a question about our pricing?
+              </div>
+              <div class="pricecontct__details-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed delectus doloribus, eos iste similique quisquam quidem reiciendis recusandae voluptatem! Dolore doloremque nam neque, nulla laborum porro tenetur voluptatem autem pariatur?
+              </div>
+              <div class="pricecontct__details-contact">
+                  <div class="mainConnect">
+                  <!-- Trigger/Open The Modal -->
+                    <button class="pricecontct__details-contact-button" id="myButn">Contact Us</button>
+                  </div>
+              
+
+                        <!-- The Modal -->
+                        <div id="myMModal" class="modal">
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <div class="modal-content-details">
+                              <div class="modal-content-details-title">
+                                Contact Us
+                              </div>
+                              <div class="modal-content-details-close">
+                                <span id="MClose">&times;</span>
+                              </div>
+                            </div>
+                            <div class="modal-content-text">
+                              Provide us with your email and submit to contact the sales team
+                            </div>
+                            <div class="modal-content-mail">
+                              <div class="modal-content-mail-title">Email</div> 
+                              <input class="modal-content-mail-input" type="email">
+                            </div>
+                            
+                            <div class="modal-content-button">
+                              <a href="./accountCreatforn.html" class="modal-content-button-submit">Submit</a>
+                              <div id="MCancel" class="modal-content-button-cancel">Cancel</div>
+                              <!-- <span ></span> -->
+                              <!-- <a href="" class=""></a> -->
+                            </div>
+                            
+                            <a class="modal-content-customer" href="./formSignin.html">Already a customer?</a>
+                          </div>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pricecontct section end -->
+
+  <!-- footer area start -->
+  <section class="footer">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-1 col-sm-2 col-md-2 col-12 footer__logo">
+            <a href="../index.html"><img src="../assets/image/travel.png" alt="MY CHOICE" class="img-fluid"></a> 
+        </div>
+        <div class="col-lg-11 col-sm-10 col-md-10 col-12">
+          <div class="conbtainer-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                <div class="footer__content-title">Feature</div>
+                <a href="./coming-soon.html" class="footer__content-item">Plan</a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                <div class="footer__content-title">Pricing</div>
+                <a href="../pages/pricePlatform.html" class="footer__content-item">Plan</a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                <div class="footer__content-title">Resources</div>
+                <a href="../pages/faqs.html" class="footer__content-item">FAQs</a>
+                <a href="../pages/tutorial.html" class="footer__content-item">Tutorial</a>                  
+                <a href="../pages/glossary.html" class="footer__content-item">Annex</a>
+                <a href="../pages/coming-soon.html" class="footer__content-item">Documentation</a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                <div class="footer__content-title">Company</div>
+                <a href="../pages/about-us.html" class="footer__content-item">About us</a>
+                <a href="../pages/career.html" class="footer__content-item">Career</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="footer__nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-md-2 col-sm-4 col-4 footer__nav-contact">
+              <!-- Trigger/Open The Modal -->
+              <button class="footer__nav-contact-name" id="myBtn">Contact</button>
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-content-details">
+                    <div class="modal-content-details-title">
+                      Contact Us
+                    </div>
+                    <div class="modal-content-details-close">
+                      <span id="Close">&times;</span>
+                    </div>
+                  </div>
+                  <div class="modal-content-text">
+                    Provide us with your email and submit to contact the sales team
+                  </div>
+                  <div class="modal-content-mail">
+                    <div class="modal-content-mail-title">Email</div> 
+                    <input class="modal-content-mail-input" type="email">
+                  </div>
+                  
+                  <div class="modal-content-button">
+                    <a href="./accountCreatforn.html" class="modal-content-button-submit">Submit</a>
+                    <div id="Cancel" class="modal-content-button-cancel">Cancel</div>
+                    <!-- <span ></span> -->
+                    <!-- <a href="" class=""></a> -->
+                  </div>
+                  
+                  <a class="modal-content-customer" href="./formSignin.html">Already a customer?</a>
+                </div>
+              </div>
+            
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-8 col-8">
+            <a href="./career.html" class="footer__nav-item">Career</a>
+            <a href="./privacy.html" class="footer__nav-item">Privacy</a>
+            <a href="./terms-conditions.html" class="footer__nav-item">T&C</a>
+            <a href="./security.html" class="footer__nav-item">Security</a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 footer__nav-text">
+            @2022 my choice travel
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</section>
+<!-- footer area end -->
+
+    <!-- toggle js -->
+    <script src="../js/toggle.js"></script>
+    
+
+    <!-- bootstrap js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+    <!-- modal js -->
+    <script src="../js/modal.js"></script>
+    <script src="../js/modal_glossary.js"></script>
+
+    <!-- header scrolling -->
+    <script src="../js/headerscrolling.js"></script>
+</body>
+</html>

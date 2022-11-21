@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat acoount</title>
+
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <!-- accountformbody section start -->
+    <section class="accountformbody">
+        <div class="accountQuestion">
+            <div class="accountQuestion__basic">Have an organization already?</div>
+            <a class="accountQuestion__button" href="./formSignin.html">Sign In</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="accountCreation">
+                        <div class="accountCreation__title">
+                            Create Your Organizational Account
+                        </div>
+                        <div class="accountCreation__image">
+                            <img class="accountCreation__image-item" src="../assets/image/buiding_1.png" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="formItem">
+                        <div class="formItem__title">
+                            Create Organizational Account
+                        </div>
+                        <div class="formItem__steps" id="Step1"> Step 1/3</div>
+    
+                        <!-- form start -->
+                        <form class="formItem__body" name="formValidation" id="formValidation" onsubmit="return false">
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Organizational Name *</div>
+                                <input class="formItem__body-item-input" type="text" id="nameOrganisation" name="nameOrganisation" required>
+                            </div>
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-hints">
+                                    Your email is used to make the first user account and for email confirmation.
+                                </div>
+                                <div class="formItem__body-item-name">Email *</div>
+                                <input class="formItem__body-item-input" type="email" id="Email" name="email" required>
+                            </div>
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-hints ">
+                                    Default currency can’t be changed later on.
+                                </div>
+                                <div class="formItem__body-item-name">Default Currency *</div>                          
+                                <!-- <input list="currency" class="formItem__body-item-input" type="text" id="Currency" name="currency" placeholder="select a option .." required/>
+                                    <datalist id="currency">
+                                        <option value="US dollar">
+                                        <option value="Euro">
+                                        <option value="Derham">
+                                        <option value="Australian dollar">
+                                        <option value="Swiss frans">
+                                    </datalist> -->
+                                <select class="formItem__body-item-input" type="text" id="Currency" name="currency" required>
+                                        <option value="" disabled hidden selected>select a option ...</option>
+                                        <option value="1">US dollar</option>
+                                        <option value="2">Derham</option>
+                                        <option value="3">Euro</option>
+                                        <option value="4">Australian dollar</option>
+                                        <option value="5">Swiss frans</option>
+                                </select>
+                            </div>
+                            <div class="formItem__body-item input-row">
+                            
+                                <input class="formItem__body-item-input--checkbox" type="checkbox" name="checkbox" id="Checkbox" required> 
+                            
+                                <div class="formItem__body-item-name">I have read and accept the <a href="">Terms and Condition</a> and <a href="">Privacy Policy</a></div> 
+                            </div>
+                            <div class="formItem__body-item  input-row">
+                                <button class="formItem__body-item-button" id="btnNext" type="submit" onclick="Parsonalinfo()"> Next </button>
+                            </div>
+                            
+                        </form>
+                            <!-- form end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- accountformbody section end -->
+
+
+    <!-- toggle js
+    <script src="../js/toggle.js"></script> -->
+    <!-- <script src="../js/gotosetp2.js"></script> -->
+
+    <!-- bootstrap js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery js -->
+
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+    <script src="../js/formValidate.js"></script>
+    <script src="../js/gotosetp2.js"></script>
+    
+
+    <!-- header scroling js -->
+    <script src="../js/headerscrolling.js"></script>
+
+</body>
+</html>

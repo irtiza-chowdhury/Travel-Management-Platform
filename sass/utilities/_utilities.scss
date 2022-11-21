@@ -1,0 +1,220 @@
+@import "../config/variable";
+
+@mixin button-primary {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background: $light_orange;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    padding: 6px 12px;
+    color: $white !important;
+    border-radius: 4px;
+    @include flexcenter;
+
+    &:hover{
+        box-shadow: 0px 0px 4px $light_orange;
+    } 
+}
+@mixin button-secondary {
+    text-decoration: none;
+    cursor: pointer;
+    height: 30px;
+    @include flexcenter;
+    border: none;
+    background: $white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 12px;
+    color: $black !important;
+    border-radius: 4px;
+    box-shadow: 0px 2px 3px 1px $light_gray;
+
+    &:hover{
+        box-shadow: 0px 1px 2px 1px $toggle_color_opacity;
+    } 
+}
+@mixin button-language {
+    border: none;
+    background: $white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 7px;
+    color: $black;
+    border-radius: 10px;
+    @include flexcenter;
+
+    &:hover{
+        box-shadow: 0px 2px 10px $light_gray,
+    } 
+}
+@mixin button-form_SignIN{
+    background: $form_signIN_color;
+    color: $white !important;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 3px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    &:hover{
+        background: #1f4465;;
+    }
+}
+
+    
+
+
+
+@mixin  nav-button {
+    .owl-nav{
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        button{
+            width: 30px;
+            height: 30px;
+            border: none !important;
+            background: $white !important;
+            border-radius: 50% !important;
+
+            &:hover{
+                background: $orange !important;
+                color: $white !important;
+            }
+        } 
+    }
+}
+
+@mixin search {
+    border: 0.5px solid $light_blue;
+    padding: 10px 20px;
+    font-size: 14px;
+    opacity: 0.6;
+    width: 300px;
+    border-radius: 4px;
+
+
+    &:hover{
+        border: 1px solid $light_blue;
+        box-shadow: 0px 0px 3px $light_blue;
+    }  
+}
+@mixin form-input {
+    border: 0.5px solid $light_gray !important;
+    box-shadow:0px 1px 1px $light_gray ;
+    width: 100%;
+    border-radius: 4px;
+    background: $white;
+
+    &:hover{
+        border: 1px solid $light_blue;
+        box-shadow: 0px 0px 3px $light_blue;
+    }  
+}
+
+@mixin modal {
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 14; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+        
+    }
+    
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        color: $black;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px;
+        border-radius: 4px !important;
+
+        &-details{
+            @include flexbetween;
+            
+            &-title{
+                @include main-paragraph;
+                font-weight: 500;
+            }
+            &-close{
+                span{
+                color: $black;
+                @include main-paragraph;
+                font-weight: 100;
+                margin: 0;
+                line-height: 1;
+                padding: 0;
+                font-size: 35px;
+                cursor: pointer;
+                }                       
+            }                   
+        }
+        &-text{
+            margin-top: 30px;
+            @include secondary-paragraph;
+            font-size: 14px;
+            
+        }
+        &-mail{
+            margin-top: 20px;
+            &-title{
+                @include secondary-paragraph;
+                font-size: 14px;
+            }
+            &-input{
+                margin-top: 10px;
+                @include search;
+                width: 100%;
+                padding: 8px 0;
+            }
+        }
+        &-button{
+            margin-top: 20px;
+            // gap: 10px;
+            @include flexbetween;
+            &-submit{
+                @include button-primary;
+                text-decoration: none;
+                padding: 8px 20px;
+                font-size: 14px;
+                font-weight: 400;
+                margin-right: 10px;
+                opacity: 0.5;
+                border-radius: 0;
+                width: 48%;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            &-cancel{
+                @include button-secondary;
+                text-decoration: none;
+                padding: 8px 20px;
+                font-size: 14px;
+                font-weight: 400;
+                border-radius: 0;
+                box-shadow: 0px 0px 4px $light_gray;
+                width: 48%;
+            }
+        }
+        &-customer{
+            margin-top: 20px;
+        }
+    }
+    
+}

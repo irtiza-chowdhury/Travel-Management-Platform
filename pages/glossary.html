@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annex</title>
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <!-- header section starts -->
+  <section id="Header" class="header">
+    <nav class="navbar navbar-expand-md py-0">
+        <div class="container-fluid header__navbar">
+        
+        <!-- travel image for upward of tab -->
+        <a id="logoTitle" class="navbar-brand header__navbar-title d-none d-md-block d-lg-block" href="../index.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web"></a>
+        
+        <!-- offcanvas button start -->
+        <button class="navbar-toggler header__navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span> 
+          </button>
+          <!-- offcanvas button end -->
+
+          <!-- offcanvas menu start -->
+          <div class="offcanvas offcanvas-start d-block d-sm-block d-md-none header__offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title header__navbar-title " id="offcanvasExampleLabel">
+                <img class="img-fluid" src="../assets/image/travel.png" alt="">
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body overflow-visible">
+                <ul class="navbar-nav header__navbar-content ">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle header__navbar-content-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pricing
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Company
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                              <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+              
+            </div>
+            <div class="header__offcanvas-button">
+                <form class="d-flex header__navbar-button" role="search">
+                    <a href="./accountCreatforn.html" class="header__navbar-button-content--primary">Create Account</a>
+                    <a href="./formSignin.html" class="header__navbar-button-content--secondary">Sign In</a>
+                  </form>
+            </div>
+          </div>
+          <!-- offcanvas menu end -->
+
+        <!-- travel image for lower than tab -->
+        <a class="navbar-brand header__navbar-title--dashboard d-sm-block d-md-none d-lg-none d-xlg-none" href="../index.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web" id="logoTitleMobile"></a>
+        
+        <!-- navbar items -->
+        <div class="collapse navbar-collapse header__navbar-collapse d-none d-md-none d-lg-block" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0  text-end header__navbar-content" id="menuOptions">
+            
+
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemPrice">
+                Pricing
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                
+                </ul>
+            </li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemResource">
+                Resources
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                </ul>
+            </li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemCompany">
+                Company
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                </ul>
+            </li>
+            </ul>
+            <form class="d-flex header__navbar-button" role="search">
+                <!-- language buttone from tab to upward-->
+                <li class="position-relative list-unstyled active dropdown">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <button class="header__navbar-button-content--language" type="button"><img src="../assets/image/globe.svg" alt=""></button>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item header__navbar-button-content-item">EN English (GB)</li>
+                        <li class="dropdown-item header__navbar-button-content-item">EN English (US)</li>
+                    </ul>
+                    <div class="position-absolute top-100 name">Language</div>
+                </li>
+            
+                <a href="./accountCreatforn.html" class="header__navbar-button-content--primary">Create Account</a>
+                <a href="./formSignin.html" class="header__navbar-button-content--secondary">Sign In</a>
+            
+            </form>
+
+                           
+        </div>
+        <!-- language buttone for mobile -->
+        <div>
+            <li class="position-relative list-unstyled active dropdown d-block d-sm-block d-md-none languageOption">
+                <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   <button class="header__navbar-button-content--language-hide" type="button">
+                    <img src="../assets/image/globe.svg" alt="">
+                   </button>
+                </a>
+                <ul class="dropdown-menu">                 
+                    <li class="dropdown-item header__navbar-button-content-item">EN English (GB)</li>
+                    <li class="dropdown-item header__navbar-button-content-item">EN English (US)</li> 
+                </ul>
+                <div class="position-absolute top-100 name">Language</div>
+            </li> 
+        </div>
+
+    </nav>
+  </section>
+  <!-- header section end -->
+
+    <!-- help section start -->
+    <section class="help">
+        <div class="help__background">
+          <div class="help__background-image">
+            <img src="../assets/image/tab_mk5-removebg-preview.png" alt="">
+          </div>
+        </div>
+          <div class="help__details">
+            
+            <div class="help__details-title">
+              <div class="scroller">
+                <div><img class="help__details-title-image" src="../assets/image/tab_mk5-removebg-preview.png" alt="support"></div> 
+                <div class="help__details-title-text"><span>Annex</span></div>
+              </div>
+                
+            </div>
+            <div class="help__details-contents">
+                <a class="help__details-contents-items" href="faqs.html">FAQs</a>
+                <a class="help__details-contents-items" href="tutorial.html">Tutorials</a>
+                <a class="help__details-contents-items--active" href="glossary.html">Annex</a>
+            </div>
+          </div>
+    </section>
+    <!-- help section end -->
+
+    <!-- glossary section starts -->
+    <section class="glossary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 glossary__details">
+                    <div class="glossary__details-title">Annex</div>
+                    <div class="glossary__details-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolor nulla exercitationem deserunt quia accusamus quaerat libero facere possimus tenetur!
+                    </div>
+                </div>
+                <div class="col-md-5 glossary__keyword">
+                    <div class="glossary__keyword-search" >
+                        <input type="text" placeholder="search">
+                    </div>
+                    
+                    <div class="glossary__keyword-conrtent">
+                        <a class="glossary__keyword-conrtent-item" href="#A">A</a>
+                        <a class="glossary__keyword-conrtent-item" href="#B">B</a>
+                        <a class="glossary__keyword-conrtent-item" href="#C">C</a>
+                        <a class="glossary__keyword-conrtent-item" href="#D">D</a>
+                        <a class="glossary__keyword-conrtent-item" href="#E">E</a>
+                        <a class="glossary__keyword-conrtent-item" href="#F">F</a>
+                        <a class="glossary__keyword-conrtent-item" href="#G">G</a>
+                        <a class="glossary__keyword-conrtent-item" href="#I">I</a>
+                        <a class="glossary__keyword-conrtent-item" href="#P">P</a>
+                        <a class="glossary__keyword-conrtent-item" href="#S">S</a>
+                        <a class="glossary__keyword-conrtent-item" href="#T">T</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- glossary section ends -->
+
+    <!-- words section start -->
+    <section class="words">
+        
+        <div class="words__content" id="A">
+            <div class="container">
+                <div class="words__content-title">A</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Approve</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus laboriosam fugit, molestias recusandae vel.</div>
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Archive</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam architecto enim, aliquam a iusto distinctio.</div>
+                </div>
+                
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Adjustment</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquid fugit dignissimos nobis, pariatur tempora impedit rem nihil facere modi!</div></div>
+                
+                <div class="words__content-item">
+                    <div class="words__content-item-name">All-Inclusive</div>
+                    <div class="words__content-item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum nobis laborum dolore! Voluptatum sunt facilis nam maxime, temporibus eius necessitatibus illo accusantium itaque accusamus cum aperiam tempora mollitia eligendi. Maxime?</div>
+                </div>
+                
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Agenda</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eligendi nulla? Quas, culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptates.</div>
+                </div>
+                
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Algorithm</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos voluptate blanditiis, vel incidunt neque excepturi sit possimus unde non reiciendis asperiores, mollitia, magnam quod laborum.</div>
+                </div>
+                
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Add-On</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                </div>
+                   
+                
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div> 
+        </div>
+        <div class="words__content" id="B">
+            <div class="container">
+                <div class="words__content-title">B</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Basement</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium dolor consequatur harum aut quod vitae quaerat!</div>              
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Budgets</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis dolor consequuntur qui!</div>              
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Branches</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque modi sunt magni perferendis voluptatibus pariatur excepturi! Dolore at harum aut!</div>              
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Backup data</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, adipisci.</div>              
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="C">
+            <div class="container">
+                <div class="words__content-title">C</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Cabin</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non, officia voluptates blanditiis veniam esse inventore fugiat impedit. Quae debitis repellendus a ea?</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Carry-On</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis placeat nobis optio?</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Credentials</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos dignissimos minus omnis fuga consequatur, deleniti doloribus.</div>
+                
+                </div>
+
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="D">
+            <div class="container">
+                <div class="words__content-title">D</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Deposit</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Dashboard</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi nesciunt nam dolor assumenda nobis officiis? Debitis?</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Deals</div>
+                    <div class="words__content-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis excepturi, officia aliquid sunt accusantium veritatis ad. Quidem obcaecati ullam dolorem.</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="E">
+            <div class="container">
+                <div class="words__content-title">E</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Exit</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ea.</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>  
+        </div>
+        <div class="words__content" id="F">
+            <div class="container">
+                <div class="words__content-title">F</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Fees</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum consequatur nesciunt consectetur?</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Frequent Updating</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minus laboriosam nobis officiis asperiores sequi accusantium vero esse molestiae.</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="G">
+            <div class="container">
+                <div class="words__content-title">G</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Global Policies</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos quas dignissimos numquam eligendi a dolorem soluta repudiandae aliquid!</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Gateway City</div>
+                    <div class="words__content-item-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Global Updates</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem consequatur recusandae odit.</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="I">
+            <div class="container">
+                <div class="words__content-title">I</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Interests</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, facilis officiis delectus earum rem consectetur totam et consequatur.</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="P">
+            <div class="container">
+                <div class="words__content-title">P</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Payment system</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum hic non tempora, quisquam quae asperiores corporis?</div>
+                
+                </div>
+                
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="S">
+            <div class="container">
+                <div class="words__content-title">S</div>
+                <div class="words__content-item">
+                <div class="words__content-item-name">Statement</div>
+                <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit dolor ipsum excepturi ratione fuga doloribus odit laboriosam!</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        <div class="words__content" id="T">
+            <div class="container">
+                <div class="words__content-title">T</div>
+                <div class="words__content-item">
+                    <div class="words__content-item-name">Transfer Data System</div>
+                    <div class="words__content-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, iusto. Inventore repudiandae dolores quos voluptatum obcaecati? Repellat incidunt ducimus maiores harum?</div>
+                
+                </div>
+                <div class="words__content-item">
+                    <a class="words__content-item-top" href="#top">Back to top</a>           
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <!-- words section end -->
+
+    <!-- clarification section start -->
+    <section class="clarification">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 clarification__text">
+                    Still have questions or need a clarification?
+                </div>
+                <div class="col-md-6 clarification__details">
+                    <div class="clarification__details-text">
+                        Our support team is always ready to answer any of your questions.
+                    </div>
+                    <div class="clarification__details-contact">
+                        <div class="mainConnect">
+                            <!-- Trigger/Open The Modal -->
+                            <!-- <span class="connect"></span> -->
+                            <button class="clarification__details-contact-name" id="myButn"> Contact </button>
+                            
+                        </div>
+                        
+
+                        <div id="myMModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <div class="modal-content-details">
+                                <div class="modal-content-details-title">
+                                  Contact Us
+                                </div>
+                                <div class="modal-content-details-close">
+                                  <span id="MClose">&times;</span>
+                                </div>
+                              </div>
+                              <div class="modal-content-text">
+                                Provide us with your email and submit to contact the sales team
+                              </div>
+                              <div class="modal-content-mail">
+                                <div class="modal-content-mail-title">Email</div> 
+                                <input class="modal-content-mail-input" type="email">
+                              </div>
+                              
+                              <div class="modal-content-button">
+                                <a href="./accountCreatforn.html" class="modal-content-button-submit">Submit</a>
+                                <div id="MCancel" class="modal-content-button-cancel">Cancel</div>
+                                <!-- <span ></span> -->
+                                <!-- <a href="" class=""></a> -->
+                              </div>
+                              
+                              <a class="modal-content-customer" href="./formSignin.html">Already a customer?</a>
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- clarification section end -->
+
+
+
+    <!-- footer area start -->
+    <section class="footer">
+        <div class="container">
+        <div class="row ">
+            <div class="col-lg-1 col-sm-2 col-md-2 col-12 footer__logo">
+                <a href="../index.html"><img src="../assets/image/travel.png" alt="MY CHOICE" class="img-fluid"></a> 
+            </div>
+            <div class="col-lg-11 col-sm-10 col-md-10 col-12">
+            <div class="conbtainer-fluid">
+                <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                    <div class="footer__content-title">Feature</div>
+                    <a href="./coming-soon.html" class="footer__content-item">Plan</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                    <div class="footer__content-title">Pricing</div>
+                    <a href="../pages/pricePlatform.html" class="footer__content-item">Plan</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                    <div class="footer__content-title">Resources</div>
+                    <a href="../pages/faqs.html" class="footer__content-item">FAQs</a>
+                    <a href="../pages/tutorial.html" class="footer__content-item">Tutorial</a>                  
+                    <a href="../pages/glossary.html" class="footer__content-item">Annex</a>
+                    <a href="../pages/coming-soon.html" class="footer__content-item">Documentation</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                    <div class="footer__content-title">Company</div>
+                    <a href="../pages/about-us.html" class="footer__content-item">About us</a>
+                    <a href="../pages/career.html" class="footer__content-item">Career</a>
+                </div>
+                </div>
+            </div>
+            
+            </div>
+            
+        </div>
+        </div>
+
+        <div class="footer__nav">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-1 col-md-2 col-sm-4 col-4 footer__nav-contact">
+                <!-- Trigger/Open The Modal -->
+                <button class="footer__nav-contact-name" id="myBtn">Contact</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <div class="modal-content-details">
+                        <div class="modal-content-details-title">
+                        Contact Us
+                        </div>
+                        <div class="modal-content-details-close">
+                        <span id="Close">&times;</span>
+                        </div>
+                    </div>
+                    <div class="modal-content-text">
+                        Provide us with your email and submit to contact the sales team
+                    </div>
+                    <div class="modal-content-mail">
+                        <div class="modal-content-mail-title">Email</div> 
+                        <input class="modal-content-mail-input" type="email">
+                    </div>
+                    
+                    <div class="modal-content-button">
+                        <a href="./accountCreatforn.html" class="modal-content-button-submit">Submit</a>
+                        <div id="Cancel" class="modal-content-button-cancel">Cancel</div>
+                        <!-- <span ></span> -->
+                        <!-- <a href="" class=""></a> -->
+                    </div>
+                    
+                    <a class="modal-content-customer" href="./formSignin.html">Already a customer?</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-8 col-8">
+                <a href="./career.html" class="footer__nav-item">Career</a>
+                <a href="./privacy.html" class="footer__nav-item">Privacy</a>
+                <a href="./terms-conditions.html" class="footer__nav-item">T&C</a>
+                <a href="./security.html" class="footer__nav-item">Security</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 footer__nav-text">
+                @2022 my choice travel
+            </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+    <!-- footer area end -->
+
+    
+
+
+
+    <!-- bs js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- modal js -->
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/modal_glossary.js"></script>
+
+    <!-- header scrolling -->
+    <script src="../js/headerscrolling.js"></script>
+</body>
+</html>

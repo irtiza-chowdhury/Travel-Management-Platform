@@ -1,0 +1,372 @@
+body{
+    font-family: Roboto !important;
+}
+.marker{
+    padding: 50px 0;
+    background: $glossary_color;
+    &__title{
+        @include secondary_heading;
+        text-align: center;
+        @media (max-width:767.98px){
+            font-size: 32px;
+        }
+    }
+    &__text{
+        padding: 10px 0;
+        @include main-paragraph;
+        font-size: 20px;
+    }
+    &__image{
+        @include flexcenter;
+        margin-top: 20px;
+        width: 100%;
+        &-map{
+            width: 100%;
+        }
+    }
+}
+.yourJourney{
+    padding: 50px 0 60px;
+
+    &__title{
+        text-align: center;
+        @include secondary_heading;
+        @media (max-width:767.98px){
+            font-size: 32px;
+        }
+    }
+    &__text{
+        margin-top: 10px;
+        @include main-paragraph;
+        font-size: 20px;
+    }
+    &__accordian{
+        margin-top: 40px;
+        &-item{
+            &-title{
+                @include card-paragraph;
+                font-weight: 500;
+                border-bottom: 2px solid $light_blue_opacity !important;
+                color: $black !important;
+                background-color: $white !important;
+                box-shadow: none !important;
+                // padding-left: 0 !important;
+            }
+            &-text{
+                @include card-paragraph;
+                font-weight: 400;
+                padding-top: 30px;
+
+                &-button{
+                    margin-top: 20px;
+                    display: block;
+                    @include button-primary;
+                    width: max-content;
+                    text-decoration: none;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+.accomplish{
+    padding: 70px 0;
+    background: $accomplish_color;
+    color: $white;
+
+    &__title{
+        @include secondary_heading;
+        @media (max-width:767.98px){
+            font-size: 32px;
+        }
+    }
+    &__text{
+        @include main-paragraph;
+        font-size: 20px;
+        @include flexleft;
+        
+    }
+}
+.ctoSpeech{
+    padding: 70px 0;
+    background: $footer_1;
+    color: $white;
+
+    .row {
+        gap: 60px;
+    }
+
+    &__image{
+        width: 180px;
+        height: 150px;
+        @include flexleft;
+        @media (max-width:768.98px){
+            margin: auto;
+        }
+       
+        &-item{
+            width: 100%;
+            height: 100%;
+            border: 5px solid $white;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px $black;
+    
+        }      
+    }
+    &__details{
+        // padding: 0 !important;
+        // margin: 0 !important;  
+        // width: max-content;     
+        
+        text-align: right;
+        // @include flexend;
+        &-text{
+            padding-right: 0;
+            text-align: justify;
+            @include main-paragraph;
+            font-size: 20px;
+            padding-left: 60px;
+            @media (max-width:768.98px){
+                padding-left: 0;
+            }
+        }
+        &-cto{
+            margin-top: 30px;
+            text-align: right;
+            @include main-paragraph;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+    }
+}
+.cetralRole{
+    padding: 70px 0;
+    &__title{
+        text-align: left;
+        &-name{
+            @include secondary_heading;
+            @media (max-width:767.98px){
+                font-size: 32px;
+            }
+        }
+        &-text{
+            @include main-paragraph;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    &__details{
+        padding-top: 40px;
+        @media (max-width:991.98px)
+        {
+            gap: 120px;
+        }
+        &-content{
+            &-image{
+                width: 150px;
+                height: 170px;
+                @include flexcenter;
+                &-item{
+                    width: 100%;
+                    
+                }
+            }
+            &-title{
+                margin-top: 20px;
+                @include secondary_heading;
+                font-size: 36px;
+                @media (max-width:767.98px){
+                    font-size: 24px;
+                }
+            }
+            &-text{
+                margin-top: 10px;
+                @include main-paragraph;
+                font-size: 20px;
+                // font-weight: 400;
+            }
+        }
+    }
+}
+.workEnvironment{
+    padding: 100px 0;
+    // color: $white;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    // background: $light_orange;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: '';
+        background: $image-overlay;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &__image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        
+
+        &-item{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title{
+        @include secondary_heading;
+        font-weight: 500;
+        color: $white;
+        @media (max-width:767.98px){
+            font-size: 32px;
+        }
+    }
+    &__content{
+        margin-top: 20px;
+        color: $white;
+        &-item{
+            display: block;
+            @include main-paragraph;
+            font-size: 20px;
+            font-weight: 400;
+            padding-top: 10px;
+        }
+    }
+}
+.learnSomething{
+    padding: 70px 0;
+    background-color: $accomplish_color;
+    color: $white;
+    &__details{
+        gap: 16%;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        &-title{
+            @include secondary_heading;
+            @media (max-width:767.98px){
+                font-size: 32px;
+            }
+            
+        }
+        &-text{
+            @include main-paragraph;
+            font-size: 20px;
+            padding: 0;
+            
+        }
+    }
+}
+.yourResume{
+    padding: 100px 0;
+    background: $glossary_color;
+
+    &__details{
+        &-title{
+            @include secondary_heading;
+            @media (max-width:767.98px){
+                font-size: 32px;
+            }
+        }
+        &-text{
+            @include main-paragraph;
+            font-size: 20px;
+        }
+    }
+    &__form{
+        &-email{
+            &-title{
+                @include card-paragraph;
+                // font-size: 20px;
+                font-weight: 400;
+                &::after{
+                    content: '*';
+                    color: $orange;
+                    padding-left: 5px;
+                }
+            }
+            &-input{
+                margin-top: 10px;
+                @include form-input;
+                height: 36px;
+                // text-align: left;
+                
+            }
+        }
+        &-attachemnt{
+            margin-top: 20px;
+
+            &-title{
+                @include card-paragraph;
+                font-weight: 400;
+                &::after{
+                    content: '*';
+                    color: $orange;
+                    padding-left: 5px;
+                }
+            }
+            .upload-btn-wrapper {
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                @include button-secondary;
+                width: fit-content;
+                padding: 10px 15px;
+                margin-top: 20px;
+              }
+            .upload-btn-wrapper input[type=file] {
+                font-size: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+              }
+            &-button{
+                margin-top: 10px;
+                display: contents;
+                // @include button-secondary;
+                font-size: 16px;
+                font-weight: 400;
+                // padding: 10px 15px;
+                color: $black;
+            }
+        }
+        &-message{
+            margin-top: 30px;
+            &-title{
+                @include card-paragraph;
+                font-weight: 400;
+            }
+            &-input{
+                position: relative;
+                margin-top: 10px;
+                &-item{
+                    height: 150px;
+                    @include form-input;
+                    padding: 10px;
+                }
+                
+            }
+            &-button{
+                // position: absolute;
+                width: fit-content;
+                @include button-primary;
+                font-size: 16px;
+                font-weight: 400;
+                // left: 0;
+                // bottom: 30px;
+                padding: 10px 15px;
+            }
+        }
+    }
+}

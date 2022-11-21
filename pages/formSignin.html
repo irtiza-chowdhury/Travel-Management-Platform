@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+
+    <!-- accountformbody section start -->
+    <section class="accountformbody">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="accountCreation">
+                        <div class="accountCreation__title">
+                            Welcome Back
+                        </div>
+                        <div class="accountCreation__image">
+                            <img class="accountCreation__image-item--password" src="../assets/image/Earth_2.png" alt="Personal information">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="formItem">
+                        <div class="formItem__title">
+                            Sign In
+                        </div>
+    
+                        <!-- form start -->
+                        <form class="formItem__body" name="formValidation" id="formValidation" onsubmit="return false">             
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Email *</div>
+                                <input class="formItem__body-item-input" type="email" id="Email" name="email" required>
+                            </div>               
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Password *</div>
+                                <input class="formItem__body-item-input" type="password" id="knownPassword" name="knownPassword" required>
+                            </div>                                                    
+                            
+                            <div class="formItem__body-item--remember input-row">
+                                
+                                <div class="formItem__body-item-name"><input type="checkbox" name="rememberMe" id="rememberMe"> <span>Remember me</span>  </div> 
+                                <div class="formItem__body-item-forget"><a href="./formForget.html">Forget password?</a></div>
+                            </div>
+                            <div class="formItem__body-item  input-row">
+                                <button class="formItem__body-item-button--signIn" id="btnSignIN" type="submit" onclick="signIn()" > Sign In </button>
+                            </div>
+                            
+                        </form>
+                        <div class="formItem__divider">Or</div>
+                        <div class="formItem__iconSocial">
+                            <div class="formItem__iconSocial-button">
+                                <a class="formItem__iconSocial-button-component" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=openid%20profile%20email&state=MKzNIXHT-DQvsktmRlhhNR5CoVaBs2Q_sT-Ni2eeIh4.pM8lQhdyqL8.account&response_type=code&client_id=1054274458403-g7nfjsk8nmk7gfdpo2pg1iahpb2du4q4.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Flogin-staging.welltravel.com%2Fauth%2Frealms%2Fmaster%2Fbroker%2Fgoogle%2Fendpoint&nonce=vf3se0NU8TgoWU9QCrW9RQ&service=lso&o2v=2&flowName=GeneralOAuthFlow"> <img src="../assets/image/Google.svg" alt="Google"> <span >Sign In with Gogle</span> </a> 
+                            </div>
+                            <div class="formItem__iconSocial-button">
+                                 <a class="formItem__iconSocial-button-component" href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=openid&state=BQ1aI2GJmYZbAC2-OLSJ9uBJgmE4uicoPbacvrsaVwg.RmvMxxuP6k8.account&response_type=code&client_id=b119d77d-fb33-4d63-8404-048bdf8db50e&redirect_uri=https%3A%2F%2Flogin-staging.welltravel.com%2Fauth%2Frealms%2Fmaster%2Fbroker%2Fazure%2Fendpoint&nonce=h5kAiPXUovCCyxjswXCDhg&sso_reload=true">
+                                 <img src="../assets/image/Azure.svg" alt="Azure"> <span >Sign In with Azure</span> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="overFlow" class="overflow">
+            <div class="overflow__success" id="Success">
+                <div class="overflow__success-scroller"> 
+                    <div class="overflow__success-scroller-image">
+                        <img class="overflow__success-scroller-image-item" src="../assets/image/thanks.png" alt="">
+                    </div>
+                    <div class="overflow__success-scroller-text">Your account is succesfully created</div>
+                </div> -->
+
+            <!-- </div> -->
+            <!-- <div class="danger" id="Danger">
+                The * marked fields are required to fill
+            </div> -->
+        <!-- </div> -->
+    </section>
+        <!-- accountformbody section end -->
+
+
+    <!-- toggle js
+    <script src="../js/toggle.js"></script> -->
+    
+    <!-- bootstrap js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery js -->
+
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+    <script src="../js/formValidate.js"></script>
+    <script src="../js/signInDashboard.js"></script>
+
+</body>
+</html>

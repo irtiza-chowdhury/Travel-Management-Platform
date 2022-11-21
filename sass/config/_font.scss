@@ -1,0 +1,34 @@
+
+@mixin primary_heading {
+    font-weight: 500;
+    font-size: 56px;
+    @media (max-width:600.98px){
+        font-size: 42px;
+    }
+}
+
+@mixin secondary_heading {
+    font-weight: 500;
+    font-size: 48px;
+    @media (max-width:600.98px){
+        font-size: 32px;
+    }
+}
+@mixin main-paragraph {
+    font-weight: 300;
+    font-size: 18px; 
+    line-height: 1.5;  
+    letter-spacing: 1px; 
+}
+@mixin secondary-paragraph {
+    font-weight: 300;
+    font-size: 16px;  
+    line-height: 1.5;
+    letter-spacing: 1px; 
+}
+@mixin card-paragraph {
+    font-weight: 300;
+    font-size: 14px;  
+    line-height: 1.3;  
+    letter-spacing: 1px;
+}

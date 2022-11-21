@@ -1,0 +1,88 @@
+.pricecontct{
+    &--backgroundinquery{
+        padding: 100px 0;
+        background: $glossary_color;
+    }
+    &__title{
+        @include secondary_heading;
+    }
+    &__details{
+        &-contact{
+            &-button{
+                &--inquery{
+                    @include button-primary;
+                    font-size: 16px;
+                    padding: 8px 24px;
+                }
+                &--brochure{
+                    margin-top: 20px;
+                    @include button-primary;
+                    font-size: 14px;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    width: max-content;
+                }
+            }
+        }
+    }
+   
+}
+.ouradvantage{
+    // knowbetter section start
+    &--knowbetter{
+        background: $accomplish_color;
+        color: $white;
+        padding: 100px 0;
+    }
+    &__text{
+        margin-top: 30px;
+        @include main-paragraph;
+        font-size: 20px;
+    }
+    // knowbetter section end
+    
+    // customer section start
+    &--customer{
+        padding: 100px 0;
+    }
+    &__subtitle{
+        &--customer{
+            @include secondary_heading;
+            margin-top: 30px;
+            padding-bottom: 8px;
+            font-size: 24px;
+            border-bottom: 2px solid $black;
+           
+        }
+        
+    }
+    // customer section end
+}
+.journey{
+    &__main{
+        &--story{
+            padding-top: 20px;
+        }
+        &-wraper{
+            &--media{
+                width: 200px;
+                margin: auto;
+                padding-top: 20px;
+            }
+        }
+
+    }
+
+    &__subtitle{
+        @include secondary_heading;
+        font-size: 20px;
+        padding-top: 25px;
+        @media (max-width:767.98px){
+            font-size: 20px !important;
+        }
+    }
+    &__text{
+        @include main-paragraph;
+        font-size: 20px;
+    }
+}

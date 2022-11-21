@@ -1,0 +1,70 @@
+.accountformbody{
+    .formItem{
+        &__body{
+            &-item{
+                &-forget{
+                    width: 50%;
+                    a{
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+                &--remember{
+                    margin-top: 30px;
+                    @include flexcenter;
+                }
+                &-button{
+                    &--signIn{
+                        @include button-primary;
+                        padding: 6px 24px;
+                    }
+                }
+            }
+        }
+        &__divider{
+            @include secondary-paragraph;
+            margin-top: 30px;
+            @include flexcenter;
+            
+            &::before{
+                height: 2px;
+                width: 100%;
+                background: $white;
+                content: '';
+                margin-right: 10px;
+            }
+            &::after{
+                height: 2px;
+                width: 100%;
+                background: $white;
+                content: '';
+                margin-left: 10px;
+            }
+        }
+        &__iconSocial{
+            margin-top: 30px;
+
+            &-button{
+                margin-top: 20px;
+
+                &-component{
+                    display: flex;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    color: $black;
+                    background: $white;
+                    padding: 6px 16px;
+                    img{
+                        text-align: start;
+                    }
+                    span{
+                        text-align: center;
+                        margin-left: 45px;
+                    }
+                }
+
+            }
+        }
+    }
+}

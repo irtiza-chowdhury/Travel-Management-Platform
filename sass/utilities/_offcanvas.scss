@@ -1,0 +1,28 @@
+.header{
+    position: relative;
+    &__offcanvas{
+        &-button{
+            position: absolute;
+            bottom: 20px;
+            left: 15px;
+
+        }
+        &-menuMain{
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+
+    .languageOption{
+        .name{
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: normal;
+            right: 40px;
+            background: $white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 0 2px 0 $toggle_color_opacity;
+        }
+    }
+}

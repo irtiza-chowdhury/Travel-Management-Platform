@@ -1,0 +1,190 @@
+.channel{
+    margin: 30px 0;
+    font-family: Roboto;
+
+    &__details{
+        @include main-paragraph;
+        font-size: 20px;
+        &-title{
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+    }
+
+    &__button{  
+        padding-right: 0;
+        @include flexright;
+        align-items: center;
+        &-item{
+            @include button-primary;
+            text-decoration: none;
+            
+        }
+        @media (max-width: 767.98px){
+            margin-top: 20px;
+            @include flexleft;
+            
+        }
+    }
+}
+
+.learn{
+    font-family: Roboto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+    &__title{
+        @include main-paragraph;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    &__search{
+        &-item{
+            @include search;
+            width: 260px;
+        }
+    }
+
+    &__main{
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border-bottom: 2px solid $light_blue_opacity;
+            background-color: $white;
+            margin-bottom: 20px;
+            @include flexleft;
+            flex-wrap: wrap;
+            // gap: 20px;
+        }
+        
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            // float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            @include secondary-paragraph;
+            opacity: 0.6;
+            margin: 20px 0 10px;
+            font-weight: 400;
+
+            @media (max-width:600.98px){
+                // font-size: 16px;
+                width: 51%;
+                padding: 0;
+                margin: 20px auto 0;
+
+                &:last-child{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+        /* Create an active/current tablink class */
+        .tab button.active {
+            // border-bottom: 2px solid $black;
+            opacity: 1;
+            position: relative;
+            &::after{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: $black;
+                content: '';
+            }
+        }
+        
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            width: 100%
+            // padding: 6px 12px;  
+        }
+
+        &-item{
+            @include flexleftwrap;
+            gap: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+
+            &-image{
+                padding-top: 10px;
+                width: 250px;
+                height: 180px;
+                cursor: pointer;
+                @media (min-width: 991px) and (max-width: 1191.98px){
+                    width: 48%;
+                    height: 300px;
+                    transition: .3s all ease-out;
+                }
+                @media (min-width: 767px) and (max-width: 991.98px){
+                    width: 70%;
+                    height: 330px;
+                    transition: 0.3s;
+                    margin: auto;
+                }
+                @media (max-width:766.98px){
+                    width: 80%;
+                    height: 200px;
+                    margin: 0 auto;
+                    pointer-events: none;
+                }
+                &:hover{
+                    width: 50%;
+                    height: 300px;
+                    transition: all 0.5s ease-in-out;
+                    @media (min-width: 767px) and (max-width: 991.98px){
+                        width: 90%;
+                        height: 330px;
+                    }
+                }
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-details{
+                width: 68%;
+                @media (min-width: 990px) and (max-width:1191.98px){
+                    width: 47%;
+                }
+                @media (min-width: 767px) and (max-width: 990.98px){
+                    width: 70%;
+                    // padding-right: 0;
+                    margin: auto;
+                }
+                @media (max-width:766.98px){
+                    width: 90%;
+                    margin: auto;
+                }
+                &-title{
+                    @include main-paragraph;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                &-time{
+                    border: none;
+                    background: $white;
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding: 0 10px;
+                    color: $black !important;
+                    box-shadow: 0 0 5px $light_gray; 
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+                &-text{
+                    @include main-paragraph;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

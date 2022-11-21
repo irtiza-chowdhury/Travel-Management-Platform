@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    
+    <!-- dashboard header  section starts -->
+    <section id="Header" class="header">
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid header__navbar">
+            
+            <!-- travel image for upward of tab -->
+            <a id="logoTitle" class="navbar-brand header__navbar-title d-none " href="./index-login.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web"></a>
+            
+            <!-- offcanvas button start -->
+            <button class="navbar-toggler  header__navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span> 
+              </button>
+              <!-- offcanvas button end -->
+
+              <!-- offcanvas menu start -->
+              <div class="offcanvas offcanvas-start d-block d-sm-block d-md-none header__offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title header__navbar-title " id="offcanvasExampleLabel">
+                    <a href="./index-login.html"><img class="img-fluid" src="../assets/image/travel.png" alt=""></a>
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body overflow-visible">
+                    <ul class="navbar-nav header__navbar-content ">
+                        <li class="nav-item my-2">
+                            <a class="header__navbar-content-link--offcanvas " href="./dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./dashboard.html">Workplace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">Billing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">Office 365</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./settings.html">Settings</a>
+                        </li>
+
+                        <div class="header__offcanvas-menuMain">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pricing
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Resources
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Company
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        
+
+                    </ul>
+                  
+                </div>
+              </div>
+              <!-- offcanvas menu for mobile view end -->
+
+            <!-- travel image for lower than tab -->
+            <a class="navbar-brand header__navbar-title--dashboard d-sm-block d-md-none d-lg-none d-xlg-none" href="./index-login.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web" id="logoTitleMobile"></a>
+            
+            <!-- navbar items for from tab to dextop view-->
+            <div class="collapse navbar-collapse header__navbar-collapse d-none d-md-none d-lg-block" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0  text-end header__navbar-content" id="menuOptions">
+                
+
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemPrice">
+                    Pricing
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                    
+                    </ul>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemResource">
+                    Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemCompany">
+                    Company
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex header__navbar-button" role="search">                                                     
+                    <a href="./dashboard.html" class="header__navbar-button-content--secondary me-2">Dashboard</a>
+                    <a href="./dashboard.html" class="header__navbar-button-content--primary">Workplace</a>
+                </form>                                         
+            </div>
+            
+            <!-- side menu bar start-->
+            <div class="header__navbar-user">
+                <div class="header__navbar-user-identity" id="userIdentity" onclick="showIdentity()">
+                    <img class="img-fluid header__navbar-user-identity-image" src="../assets/image/User_2.png" alt="user">
+                </div>
+
+                <div class="card header__navbar-user-card" id="userInfo">
+                    <div class="card-body">
+
+                        <!-- <div class="header__navbar-user-card-close" id="userClose">X</div> -->
+
+                        <div class="header__navbar-user-card-image">
+                            <img src="../assets/image/User_2.png" alt="User Photo">
+                            <div class="header__navbar-user-card-image-pen" id="penSetting">
+                                <a href="../pages/settings.html"><i class="fa-solid fa-pen"></i></a>
+                                <div class="position-relative">
+                                    <div class="header__navbar-user-card-image-editProfile">Edit profile</div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="header__navbar-user-card-name">User Name</div>
+                        <div class="header__navbar-user-card-mail">user@example.com</div>
+                        <div class="header__navbar-user-card-signOut">
+                            <a href="../index.html">Sign Out</a>
+                        </div>
+                        <div class="header__navbar-user-card-link">                       
+                            <div class="header__navbar-user-card-link-item">Privacy Policy</div>
+                            <div class="header__navbar-user-card-link-item">Terms of service</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- side menu bar end --> 
+  
+        </nav>
+    </section>
+    <!-- dashboard  header section end -->
+
+    <!-- dashboard body section start-->
+    <section class="dashboardBody">
+        <div class="dashboardBody__sideBar d-none d-sm-none d-md-block">
+            <div class="dashboardBody__sideBar-title">
+                <a href="./index-login.html"><img src="../assets/image/travel.png" alt="travel logo"></a>
+            </div>
+            <div class="dashboardBody__sideBar-details">
+                <ul class="dashboardBody__sideBar-details-content list-unstyled">
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <a href="./dashboard.html">
+                            <img class="dashboardBody__sideBar-details-content-item-image--dashboard" src="../assets/image/dashboard_1.png" alt="dashboard">
+                        <span class="dashboardBody__sideBar-details-content-item-name">Dashboard</span>
+                        </a>
+                        
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/clock.png" alt="Billing">
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">Billing</a>
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/headphone_white.png" alt="support">
+                        <!-- <span class="dashboardBody__sideBar-details-content-item-name"></span> -->
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">Support</a>
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/dashboard_2.png" alt="Workplace">
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./dashboard.html">Workplace</a>
+                        <!-- <span class="dashboardBody__sideBar-details-content-item-name"></span> -->
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/user_3.png" alt="User">
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">User</a>
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/360deg.png" alt="Affiliates">
+                    
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">Office 365</a>  
+                    </li>
+                </ul>
+            </div>
+            <div class="dashboardBody__sideBar-details--settings">
+                <ul class="dashboardBody__sideBar-details-content list-unstyled">
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <a href="./settings.html">
+                            <img class="dashboardBody__sideBar-details-content-item-image--settingImage" src="../assets/image/setting.jpg" alt="Settings">
+                            <span class="dashboardBody__sideBar-details-content-item-name">Settings</span>
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- dashboardBody main start-->
+        <div class="container dashboardBody--mainPart">
+            <div class="row">
+                <div class="col-12 col-md-8 my-2">
+                    <div class="card h-100 dashboardBody--cards">
+                        <div class="card-body">
+                          <div class="dashboardBody__Intro">
+                            <div class="dashboardBody__Intro-title">
+                                Welcome Back, Mr. James Rodriguez
+                            </div>
+                            <div class="dashboardBody__Intro-icon">
+                                <a class="dashboardBody__Intro-icon-setting" href="./settings.html">
+                                    <img src="../assets/image/setting_2.png" alt="setting">
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4 my-2">
+                    <div class="card h-100 dashboardBody--cards">
+                        <div class="card-body">
+                          <div class="dashboardBody__manager">
+                            <div class="dashboardBody__manager-image">
+                                <img src="../assets/image/women1.jpg" alt="Relationship manager">
+                            </div>
+                            <div class="dashboardBody__manager-identity">
+                                <div class="dashboardBody__manager-identity-post">Customer Relationship Manager</div>
+                                <div class="dashboardBody__manager-identity-name">
+                                    Lorem, ipsum dolor
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row dashboardBody--midPart">
+                <div class="col-12 col-md-6 col-lg-4 dashboardBody--midPart-child my-2">
+                    <div class="card h-100 dashboardBody--cards">
+                        <div class="card-body">
+                          <div class="dashboardBody__kpi">
+                            <div class="dashboardBody__kpi-title">KPIs</div>
+                          </div>
+                          <div class="dashboardBody__kpi-contents">
+                            <div class="dashboardBody__kpi-contents-items">
+                                <div class="card dashboardBody--cards">
+                                    <div class="card-body">
+                                        <div class="dashboardBody__kpi-contents-items-name">Profiles Added</div>
+                                        <div class="dashboardBody__kpi-contents-items-values">
+                                            <div class="dashboardBody__kpi-contents-items-values-details">
+                                                <span class="assignedValue">4</span>
+                                                <span class="resultValue">+33%</span>
+                                            </div>
+                                            <div class="dashboardBody__kpi-contents-items-values-icon">
+                                                <img src="../assets/image/up-arrows.png" alt="up-arrows">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="dashboardBody__kpi-contents-items-time">
+                                            Compared to last 7 days
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboardBody__kpi-contents-items">
+                                <div class="card dashboardBody--cards">
+                                    <div class="card-body">
+                                        <div class="dashboardBody__kpi-contents-items-name">Searches</div>
+                                        <div class="dashboardBody__kpi-contents-items-values">
+                                            <div class="dashboardBody__kpi-contents-items-values-details">
+                                                <span class="assignedValue">776</span>
+                                                <span class="resultValue">+50%</span>
+                                            </div>
+                                            <div class="dashboardBody__kpi-contents-items-values-icon">
+                                                <img src="../assets/image/up-arrows.png" alt="up-arrows">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="dashboardBody__kpi-contents-items-time">
+                                            Compared to last 7 days
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboardBody__kpi-contents-items">
+                                <div class="card dashboardBody--cards">
+                                    <div class="card-body">
+                                        <div class="dashboardBody__kpi-contents-items-name">Recomended</div>
+                                        <div class="dashboardBody__kpi-contents-items-values">
+                                            <div class="dashboardBody__kpi-contents-items-values-details">
+                                                <span class="assignedValue">6</span>
+                                                <span class="resultValue">+10%</span>
+                                            </div>
+                                            <div class="dashboardBody__kpi-contents-items-values-icon">
+                                                <img src="../assets/image/up-arrows.png" alt="up-arrows">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="dashboardBody__kpi-contents-items-time">
+                                            Compared to last 7 days
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboardBody__kpi-contents-items">
+                                <div class="card dashboardBody--cards">
+                                    <div class="card-body">
+                                        <div class="dashboardBody__kpi-contents-items-name">Service Provided</div>
+                                        <div class="dashboardBody__kpi-contents-items-values">
+                                            <div class="dashboardBody__kpi-contents-items-values-details">
+                                                <span class="assignedValue">49</span>
+                                                <span class="resultValue--red">-46%</span>
+                                            </div>
+                                            <div class="dashboardBody__kpi-contents-items-values-icon">
+                                                <img src="../assets/image/down_arrow.png" alt="up-arrows">
+                                            </div>
+                                        </div>
+                                        <div class="dashboardBody__kpi-contents-items-time">
+                                            Compared to last 7 days
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 dashboardBody--midPart-child my-2">
+                    <div class="card h-100 dashboardBody--cards">
+                        <div class="card-body">
+                          <div class="dashboardBody__briefing">
+                            <div class="dashboardBody--textblur">Today's Briefing</div>
+                            <div class="dashboardBody__briefing-subtitle">Online Activity</div>
+                            <div class="dashboardBody--textblur">Lorem ipsum dolor sit amet</div>
+                            <div class="dashboardBody--textblur">Lorem ipsum dolor sit amet consectetu</div>
+                            <div class="dashboardBody__briefing-subtitle">Offline Activity</div>
+                            <div class="dashboardBody--textblur"> <span class="dashboardBody--textblur-numbers">23</span> Lorem ipsum dolor sit amet</div>
+                            <div class="dashboardBody--textblur"> <span class="dashboardBody--textblur-numbers">35</span> Lorem ipsum dolor sit amet consectetu.</div>
+                            <div class="dashboardBody--textblur"><span class="dashboardBody--textblur-numbers">56</span> Lorem ipsum dolor sit amet consectetu.</div>
+                            <div class="dashboardBody__briefing-subtitle">Today Task</div>
+                            <div class="card dashboardBody--cards mt-3">
+                                <div class="card-body">
+                                  <div class="dashboardBody__briefing-icon m-auto">
+                                    <img class="dashboardBody__briefing-icon-image" src="../assets/image/list_completed.png" alt="Task completed">
+                                  </div>
+                                  <div class="dashboardBody--textblur text-center">Lorem sit amet consectetu</div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 dashboardBody--midPart-child my-2">
+                    <div class="card h-100 dashboardBody--cards-twitter">
+                        <div class="dashboardBody--cards-twitter-title">
+                            <span>Twitter Feed</span> 
+                        </div>
+                        <div class="card-body">
+                            <div class="dashboardBody__twitter">
+                                <!-- <div class="dashboardBody__twitter-title">
+                                    <span>Twitter Feed</span> 
+                                </div> -->
+                                
+                                <div class=" dashboardBody__twitter-content">
+                                    <div class="row p-0 dashboardBody__twitter-content-item">
+                                        <div class="col-2 col-md-2 ">
+                                            <div class="dashboardBody__twitter-content-item-image">
+                                                <img  src="../assets/image/amadeus__twitter.jpg" alt="amadeus logo">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-9 col-md-9 dashboardBody__twitter-content-item-brief">
+                                            <div class="dashboardBody__twitter-content-item-brief-name">
+                                                Amadeus <span class="dashboardBody--textblur"> @AmadeusITGroup 15 January</span> 
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis non aperiam consectetur consequatur quidem nostrum ipsum cupiditate at quis, nam repellendus nesciunt, laborum omnis. Consectetur ea quis ducimus perferendis.
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-image">
+                                                <img  src="../assets/image/amadeus_content.jpg" alt="amadeus">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row dashboardBody__twitter-content-item">
+                                        <div class="col-2 col-md-2">
+                                            <div class="dashboardBody__twitter-content-item-image">
+                                                <img  src="../assets/image/icao_twitter.jpg" alt="Icao Logo">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-9 col-md-9 dashboardBody__twitter-content-item-brief">
+                                            <div class="dashboardBody__twitter-content-item-brief-name">
+                                                ICAO <span class="dashboardBody--textblur">@Icao 17 September</span>
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident similique iure sit modi veniam, consequatur necessitatibus ea neque adipisci impedit distinctio vel, in voluptate. Sit.
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-image">
+                                                <img  src="../assets/image/Icao_content.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-0 dashboardBody__twitter-content-item">
+                                        <div class="col-2 col-md-2 ">
+                                            <div class="dashboardBody__twitter-content-item-image">
+                                                <img  src="../assets/image/amadeus__twitter.jpg" alt="amadeus logo">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-9 col-md-9 dashboardBody__twitter-content-item-brief">
+                                            <div class="dashboardBody__twitter-content-item-brief-name">
+                                                Amadeus <span class="dashboardBody--textblur"> @AmadeusITGroup 15 October</span> 
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis non aperiam consectetur consequatur quidem nostrum ipsum cupiditate at quis, nam repellendus nesciunt, laborum omnis. Consectetur ea quis ducimus perferendis.
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-image">
+                                                <img  src="../assets/image/amadeus_content.jpg" alt="amadeus">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row dashboardBody__twitter-content-item">
+                                        <div class="col-2 col-md-2">
+                                            <div class="dashboardBody__twitter-content-item-image">
+                                                <img  src="../assets/image/icao_twitter.jpg" alt="Icao Logo">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-9 col-md-9 dashboardBody__twitter-content-item-brief">
+                                            <div class="dashboardBody__twitter-content-item-brief-name">
+                                                ICAO <span class="dashboardBody--textblur">@Icao 30 September</span>
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident similique iure sit modi veniam, consequatur necessitatibus ea neque adipisci impedit distinctio vel, in voluptate. Sit.
+                                            </div>
+                                            <div class="dashboardBody__twitter-content-item-brief-image">
+                                                <img  src="../assets/image/Icao_content.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="dashboardBody__twitter-footer">
+                                    follow <a href="https://twitter.com/" class=""> @oursite</a> on Twitter <img  class="dashboardBody__twitter-footer-image" src="../assets/image/twitter.svg" alt="">
+                                </div>
+                            </div>
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row dashboardBody__news">
+                
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="dashboardBody__news-title">Recent News</div>
+                        <div class="dashboardBody__news-content">
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards p-0 m-0">
+                                        <div class="card-body p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/sea_beach_1.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-12 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum consectetur adipisicing elit. Exercitationem qui delectus nemo!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards  p-0 m-0">
+                                        <div class="card-body  p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/passports_news.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-12 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laboriosam illum ratione!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards  p-0 m-0">
+                                        <div class="card-body p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/Ship_1.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-12 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing electus nemo!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards  p-0 m-0">
+                                        <div class="card-body p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/plane_news_1.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-12 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum dolor consectetur adipisicing elit. Exercitationem qui delectus nemo!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="dashboardBody__news-title">World News</div>
+                        <div class="dashboardBody__news-content">
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards p-0 m-0">
+                                        <div class="card-body p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/Passenger_2.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-11 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum consectetur adipisicing elit. Exercitationem qui delectus nemo!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards  p-0 m-0">
+                                        <div class="card-body  p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/Plane_in_rain.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-12 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laboriosam illum ratione!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards  p-0 m-0">
+                                        <div class="card-body p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/China_town.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-12 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing electus nemo!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dashboardBody__news-content-item">
+                                <a class="dashboardBody__news--link" href="./dashboard_news.html">
+                                    <div class="card dashboardBody--cards  p-0 m-0">
+                                        <div class="card-body p-0 m-0 dashboardBody__news-content-item-details">
+                                          <div class="dashboardBody__news-content-item-details-image col-12 col-md-3">
+                                            <img class="dashboardBody__news-content-item-details-image-item" src="../assets/image/Passenger_1.jpg" alt="sea beach">
+                                          </div>
+                                          <div class="dashboardBody__news-content-item-details-text col-12 col-md-8">
+                                            <div class="dashboardBody--textblur"> Sep 3, 2021</div>
+                                            <div class="dashboardBody__news-content-item-details-text-heading">
+                                                Lorem ipsum dolor consectetur adipisicing elit. Exercitationem qui delectus nemo!
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- dashboard body section end-->
+
+
+   
+    <!-- bs js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery js -->
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+
+     <!-- custom js -->
+     <script src="../js/userDisplay.js"></script>
+
+     <!-- header scrolling -->
+     <script src="../js/headerscrolling.js"></script>
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Choice Travel</title>
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- header section starts -->
+  <section id="Header" class="header ">
+      <nav class="navbar navbar-expand-md py-0">
+          <div class="container-fluid header__navbar">
+          
+          <!-- travel image for upward of tab -->
+          <a id="logoTitle" class="navbar-brand header__navbar-title d-none d-md-block d-lg-block" href="index.html"><img class="img-fluid" src="assets/image/travel.png" alt="travel web"></a>
+          
+          <!-- offcanvas button start -->
+          <button class="navbar-toggler  header__navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span> 
+            </button>
+            <!-- offcanvas button end -->
+
+            <!-- offcanvas menu start -->
+            <div class="offcanvas offcanvas-start d-block d-sm-block d-md-none header__offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title header__navbar-title " id="offcanvasExampleLabel">
+                  <img class="img-fluid" src="assets/image/travel.png" alt="">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body overflow-visible">
+                  <ul class="navbar-nav header__navbar-content ">
+                      <li class="nav-item">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pricing
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header__navbar-content-link-item" href="pages/pricePlatform.html">Plan</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Resources
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header__navbar-content-link-item" href="pages/faqs.html">FAQs</a></li>
+                                <li><a class="dropdown-item header__navbar-content-link-item" href="pages/tutorial.html">Tutorials</a></li>
+                                <li><a class="dropdown-item header__navbar-content-link-item" href="pages/glossary.html">Annex</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Company
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item header__navbar-content-link-item" href="pages/about-us.html">About Us</a></li>
+                                <li><a class="dropdown-item header__navbar-content-link-item" href="pages/career.html">Career</a></li>
+                                <li><a class="dropdown-item header__navbar-content-link-item" href="pages/media.html">Media</a></li>
+                              </ul>
+                          </div>
+                      </li>
+
+                  </ul>
+                
+              </div>
+              <div class="header__offcanvas-button">
+                  <form class="d-flex header__navbar-button" role="search">
+                      <a href="pages/accountCreatforn.html" class="header__navbar-button-content--primary">Create Account</a>
+                      <a href="pages/formSignin.html" class="header__navbar-button-content--secondary">Sign In</a>
+                    </form>
+              </div>
+            </div>
+            <!-- offcanvas menu end -->
+
+          <!-- travel image for lower than tab -->
+          <a class="navbar-brand header__navbar-title--dashboard d-sm-block d-md-none d-lg-none d-xlg-none" href="index.html"><img class="img-fluid" src="assets/image/travel.png" alt="travel web" id="logoTitleMobile"></a>
+          
+          <!-- navbar items -->
+          <div class="collapse navbar-collapse header__navbar-collapse d-none d-md-none d-lg-block" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0  text-end header__navbar-content" id="menuOptions">
+              
+
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemPrice">
+                  Pricing
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="pages/pricePlatform.html">Plan</a></li>
+                  
+                  </ul>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemResource">
+                  Resources
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="pages/faqs.html">FAQs</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="pages/tutorial.html">Tutorials</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="pages/glossary.html">Annex</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemCompany">
+                  Company
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="pages/about-us.html">About Us</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="pages/career.html">Career</a></li>
+                  <li><a class="dropdown-item header__navbar-content-link-item" href="pages/media.html">Media</a></li>
+                  </ul>
+              </li>
+              </ul>
+              <form class="d-flex header__navbar-button" role="search">
+                  <!-- language buttone from tab to upward-->
+                  <li class="position-relative list-unstyled active dropdown">
+                      <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         <button class="header__navbar-button-content--language" type="button"><img src="assets/image/globe.svg" alt=""></button>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item header__navbar-button-content-item">EN English (GB)</li>
+                          <li class="dropdown-item header__navbar-button-content-item">EN English (US)</li>
+                      </ul>
+                      <div class="position-absolute top-100 name">Language</div>
+                  </li>
+              
+                  <a href="pages/accountCreatforn.html" class="header__navbar-button-content--primary">Create Account</a>
+                  <a href="pages/formSignin.html" class="header__navbar-button-content--secondary">Sign In</a>
+              
+              </form>
+
+                             
+          </div>
+          <!-- language buttone for mobile -->
+          <div>
+              <li class="position-relative list-unstyled active dropdown d-block d-sm-block d-md-none languageOption">
+                  <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <button class="header__navbar-button-content--language-hide" type="button">
+                      <img src="assets/image/globe.svg" alt="">
+                     </button>
+                  </a>
+                  <ul class="dropdown-menu">                 
+                      <li class="dropdown-item header__navbar-button-content-item">EN English (GB)</li>
+                      <li class="dropdown-item header__navbar-button-content-item">EN English (US)</li> 
+                  </ul>
+                  <div class="position-absolute top-100 name">Language</div>
+              </li> 
+          </div>
+
+      </nav>
+  </section>
+  <!-- header section end -->
+
+    <!-- Intro section start -->
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 intro__brief">
+            <div class="intro__brief-title">Best Management to Facilitate Best facility</div>
+            <div class="intro__brief-text--large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nam.</div>
+            <div class="intro__brief-text--short">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates dicta laboriosam sint et voluptate suscipit dolores!</div>
+            <div class="intro__brief-button">
+              <a href="pages/accountCreatforn.html" class="primary-button">Create account</a>
+              <a href="pages/pricePlatform.html" class="secondary-button">See More</a>
+            </div>
+            <div class="intro__brief-partner">
+              <div class="intro__brief-partner-title">Our efficient partners</div>
+              <ul class="intro__brief-partner-content">
+                <li><img class="intro__brief-partner-content-item" src="assets/image/logo_skyscanner-2.png" alt="logo_skyscanner-2"></li>
+                <li><img class="intro__brief-partner-content-item" src="assets/image/logo-transat.png" alt="logo-transat"></li>
+                <li><img class="intro__brief-partner-content-item" src="assets/image/logo_siteminder.png" alt="logo_siteminder"></li>
+                <li><img class="intro__brief-partner-content-item" src="assets/image/logo-travel.png" alt="logo-travel"></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 intro__image">
+            <img class="img-fluid" src="assets/image/mockup1.png" alt="travelling with my choice">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Intro section end -->
+    
+    <!-- review section start -->
+    <section class="review">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 review__image">
+            <img class="img-fluiud" src="assets/image/women1.jpg" alt="">
+          </div>
+          <div class="col-lg-9 review__brief">
+            <div class="review__brief-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates magni ducimus!"</div>
+            <div class="review__brief-name">Michael Hill</div>
+            <div class="review__brief-post">
+              <span class="review__brief-post-contents">Managing director</span>
+              <span class="review__brief-post-contents">XYZ travelling</span>
+              <span class="review__brief-post-contents">Australia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+
+    <!-- connections section start -->
+    <section class="connection">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 connection__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel id laudantium necessitatibus.
+          </div>
+          <div class="col-lg-6 connection__images">
+            <div class="connection__images-item--lorem">
+              <img  src="assets/image/airways_1-edited-removebg-preview.png" alt="airlines">
+            </div>
+            <div class="connection__images-item">
+              <img  src="assets/image/airways_2.png" alt="airlines">
+            </div>
+            <div class="connection__images-item">
+              <img  src="assets/image/airways_3edited-removebg-preview.png" alt="airlines">
+            </div>
+            <div class="connection__images-item">
+              <img  src="assets/image/airways_4edited-removebg-preview.png" alt="airlines">
+            </div>
+            <div class="connection__images-item--airways-5">
+              <img  src="assets/image/airways_5edited-removebg-preview.png" alt="airlines">
+            </div>
+            <div class="connection__images-item--airways-5">
+              <img  src="assets/image/airways_6edited-removebg-preview.png" alt="airlines">
+            </div>
+            <div class="connection__images-item">
+              <img  src="assets/image/airline-air-france.png" alt="airlines">
+            </div>
+            <div class="connection__images-item">
+              <img  src="assets/image/airline-blue-air-edited.png" alt="airlines">
+            </div>
+            <div class="connection__images-item--pacific">
+              <img  src="assets/image/airline-Cathay_Pacific-edited-removebg-preview.png" alt="airlines">
+            </div>
+            <div class="connection__images-item--raynair">
+              <img  src="assets/image/airline-transparent-ryanair.png" alt="airlines">
+            </div>
+            <div class="connection__images-item--southern">
+              <img  src="assets/image/Airline-China-Southern-logo.png" alt="airlines">
+            </div>
+            <div class="connection__images-item">
+              <img  src="assets/image/Airline-delta-edited.png" alt="airlines">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <!-- connections section end -->
+
+    <!-- features section start -->
+    <section class="feature container">
+      <div class="feature__text">
+        <div class="feature__text-title">Best Featurtes</div>
+        <div class="feature__text-button">
+          <a href="pages/pricePlatform.html">View all</a>
+        </div>
+      </div>
+      <div class="feature__cards ">
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-magnifying-glass"></i> Title 1</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item" >
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-plane"></i> Title 2</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-temperature-arrow-up"></i> Title 3</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-tower-cell"></i> Title 4</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-compass"></i> Title 5</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-truck-plane"></i> Title 6</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-list-check"></i> Title 7</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-user"></i> Title 8</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"> <i class="fa-solid fa-mobile-screen"></i> Title 9</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-regular fa-pen-to-square"></i> Title 10</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-envelope-open-text"></i> Title 11</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        <div class="card feature__cards-item">
+          <div class="card-body">
+            <h5 class="card-title feature__cards-item-title"><i class="fa-solid fa-handshake-angle"></i> Title 12</h5>
+            <p class="card-text feature__cards-item-details">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="pages/pricePlatform.html" class="card-link feature__cards-item-link">read more</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- features section end -->
+
+    <!-- support section start -->
+    <section class="support">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 support__image">
+            <img src="assets/image/headphones.png" alt="">
+          </div>
+          <div class=" col-md-8 support__details">
+            <div class="support__details-title">24/7 support</div>
+            <div class="support__details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quo obcaecati maxime soluta reprehenderit consectetur!</div>
+            <div class="support__details-button">
+
+              <!-- <a href="" class="support__details-button-contact">Contact </a> -->
+              
+              <div class="support__details-button-contact">
+                <div class="mainConnect">
+                    <button class="support__details-button-contact-item" id="myButn"> Contact Us</button>   
+               </div>
+                  <!-- The Modal -->
+                  <div id="myMModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <div class="modal-content-details">
+                        <div class="modal-content-details-title">
+                          Contact Us
+                        </div>
+                        <div class="modal-content-details-close">
+                          <span id="MClose">&times;</span>
+                        </div>
+                      </div>
+                      <div class="modal-content-text">
+                        Provide us with your email and submit to contact the sales team
+                      </div>
+                      <div class="modal-content-mail">
+                        <div class="modal-content-mail-title">Email</div> 
+                        <input class="modal-content-mail-input" type="email">
+                      </div>
+                      
+                      <div class="modal-content-button">
+                        <a href="./accountCreatforn.html" class="modal-content-button-submit">Submit</a>
+                        <div id="MCancel" class="modal-content-button-cancel">Cancel</div>
+                        <!-- <span ></span> -->
+                        <!-- <a href="" class=""></a> -->
+                      </div>
+                      
+                      <a class="modal-content-customer" href="pages/formSignin.html">Already a customer?</a>
+                    </div>
+                  </div>
+            </div>
+              <a href="pages/faqs.html" class="support__details-button-faqs">FAQs</a>
+              <a href="https://twitter.com/" role="button" class="support__details-button-twitter">
+                <img src="assets/image/twitter.svg" alt="">
+              </a>
+              <a href="https://www.youtube.com/" role="button" class="support__details-button-youtube">
+                <img src="assets/image/youtube.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- support section end -->
+    
+    <!-- success area start -->
+    <section class="success">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="success__title">Glorious Success Story</div>
+            <div class="success__company">
+              <div class="success__company-item">Exclusive Travel</div>
+              <div class="success__company-item">Silico Travel</div>
+            </div>
+            <div class="success__user"> <span class="number">100,000+</span>  active users since 2018</div>
+            <div class="success__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nisi ea quis, impedit ipsa cupiditate commodi atque obcaecati quam corrupti repellat ratione qui accusamus consectetur libero dolore necessitatibus saepe quibusdam. Cum a modi nemo officia accusantium laboriosam molestias molestiae similique libero, obcaecati iste aliquam consequatur harum quaerat necessitatibus maiores repellendus saepe sit, animi eaque cumque ut. Rerum soluta ad cupiditate.
+            </div>
+            <div class="success__details">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A possimus, esse quae, repudiandae pariatur corrupti quia aliquam non quaerat officiis, facilis veritatis temporibus cupiditate nobis libero vel. Tenetur aliquid delectus iure voluptatem optio odio, reiciendis expedita, debitis sunt praesentium consequatur sequi sit alias nemo magnam obcaecati ad non fuga aut?              
+            </div>
+            <div class="success__details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit reiciendis possimus reprehenderit ipsum itaque hic, ex quo dolorem soluta, eum dolores fuga aut, id incidunt laboriosam! Magni ipsum minus enim maiores id quia, ratione reprehenderit, officia omnis necessitatibus quis iusto ipsam officiis, debitis nisi perferendis natus. Suscipit nobis architecto omnis?
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="success__image">
+              <img src="assets/image/mockup2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- success area end -->
+
+    <!-- footer area start -->
+    <section class="footer">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-1 col-sm-2 col-md-2 col-12 footer__logo">
+            <a href="./index.html"> <img src="assets/image/travel.png" alt="MY CHOICE" class="img-fluid"></a>
+            
+          </div>
+          <div class="col-lg-11 col-sm-10 col-md-10 col-12">
+            <div class="conbtainer-fluid">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                  <div class="footer__content-title">Feature</div>
+                  <a href="pages/coming-soon.html" class="footer__content-item">Plan</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                  <div class="footer__content-title">Pricing</div>
+                  <a href="pages/pricePlatform.html" class="footer__content-item">Plan</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                  <div class="footer__content-title">Resources</div>
+                  <a href="pages/faqs.html" class="footer__content-item">FAQs</a>
+                  <a href="pages/tutorial.html" class="footer__content-item">Tutorial</a>                  
+                  <a href="pages/glossary.html" class="footer__content-item">Annex</a>
+                  <a href="pages/coming-soon.html" class="footer__content-item">Documentation</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 footer__content">
+                  <div class="footer__content-title">Company</div>
+                  <a href="pages/about-us.html" class="footer__content-item">About us</a>
+                  <a href="pages/career.html" class="footer__content-item">Career</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-1 col-md-2 col-sm-4 col-4 footer__nav-contact">
+                <!-- Trigger/Open The Modal -->
+                <button class="footer__nav-contact-name" id="myBtn">Contact</button>
+
+                               <!-- The Modal -->
+                               <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <div class="modal-content-details">
+                                    <div class="modal-content-details-title">
+                                    Contact Us
+                                    </div>
+                                    <div class="modal-content-details-close">
+                                    <span id="Close">&times;</span>
+                                    </div>
+                                </div>
+                                <div class="modal-content-text">
+                                    Provide us with your email and submit to contact the sales team
+                                </div>
+                                <div class="modal-content-mail">
+                                    <div class="modal-content-mail-title">Email</div> 
+                                    <input class="modal-content-mail-input" type="email">
+                                </div>
+                                
+                                <div class="modal-content-button">
+                                    <a href="./accountCreatforn.html" class="modal-content-button-submit">Submit</a>
+                                    <div id="Cancel" class="modal-content-button-cancel">Cancel</div>
+                                    <!-- <span ></span> -->
+                                    <!-- <a href="" class=""></a> -->
+                                </div>
+                                
+                                <a class="modal-content-customer" href="pages/formSignin.html">Already a customer?</a>
+                                </div>
+                            </div>
+              
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-8 col-8">
+              <a href="pages/career.html" class="footer__nav-item">Career</a>
+              <a href="pages/privacy.html" class="footer__nav-item">Privacy</a>
+              <a href="pages/terms-conditions.html" class="footer__nav-item">T&C</a>
+              <a href="pages//security.html" class="footer__nav-item">Security</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 footer__nav-text">
+              @2022 my choice travel
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+  <!-- footer area end -->
+
+
+    <!-- bs js -->
+    <script src="assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- modal js  -->
+    <script src="js/modal.js"></script>
+    <script src="js/modal_glossary.js"></script>
+
+    <!-- headerscroll js -->
+    <script src="js/headerscrolling.js"></script>
+
+</body>
+</html>

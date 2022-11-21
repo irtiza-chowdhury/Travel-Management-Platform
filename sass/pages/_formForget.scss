@@ -1,0 +1,90 @@
+.accountformbody{
+    &--forget{
+        height: 100vh;
+        background: $accomplish_color;
+        color: $white;
+
+        .accountCreation{
+            @media (max-width:767.98px){
+                display: none;
+            }
+            text-align: center;
+            margin-top: 30%;
+            &__title{
+                @include secondary_heading;
+                font-weight: 400;
+            }
+    
+            &__image{
+                width: 200px;
+                margin: auto;
+                &-item{
+                    &--password{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .formItem{
+            width: 300px;
+            margin-top: 30%;
+            &__title{
+                font-size: 22px;
+                font-weight: 400;             
+            }
+            &__body{
+                margin-top: 30px;
+                &-item{
+                    margin-top: 30px;
+                    &-name{
+                        width: 100%;
+                        @include card-paragraph;       
+                        a{
+                            color: $white !important;
+                        }
+                    }
+                    &-input{
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 4px 20px;
+                        border-radius: 4px;
+                        border: 2px solid transparent !important;
+                        color: $black;
+                        transition: all 0.5s ease-out;
+                        outline: 0;
+                        
+                    }
+                    label.error{
+                        font-size: 14px;
+                        color: #f00;
+                        margin: 5px 0;
+                    }
+                    &-forget{
+                        margin-top: 10px;
+                        @include card-paragraph;       
+                        a{
+                            text-decoration: none;
+                            color: $white !important;
+                        }
+                    }
+                    &-button{
+                        &--signIn{
+                            @include button-primary;
+                            padding: 6px 24px;
+                        }
+                    }
+                }
+                .danger{
+                    display: none;
+                    margin-top: 5px;
+                    background: $light_orange;
+                    font-size: 14px;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                }
+            }
+        }
+
+    }
+
+}

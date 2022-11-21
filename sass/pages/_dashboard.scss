@@ -1,0 +1,441 @@
+.header{
+    &__navbar{
+        &-title{
+            &--dashboard{
+                width: 50px;
+                border-radius: 4px;
+
+                img{
+                    border-radius: 8x;
+                }
+            }
+        }
+    }
+}
+
+.dashboardBody{
+    // position: relative; 
+    background: $glossary_color;
+    &__sideBar{
+        z-index: 15;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 65px;
+        height: 100%;
+        overflow: hidden;
+        padding: 40px 10px 40px 10px;
+        background: $accomplish_color;
+        color: $white !important;
+        transition: all 0.5s ease-in-out,box-shadow .23s linear;
+        // height: 100%;
+        &:hover{
+            width: 200px;
+            box-shadow: 6px 0 6px #1c355d4d;
+            
+            .dashboardBody__sideBar-title{
+                @include flexcenter;
+                transition: all 0.5s linear ease-in-out;
+            }
+        }
+        &-title{
+            width: 150px;
+            transition: all 0.5s linear ease-in-out;
+            // transition: opacity 50ms linear 0.5s;
+            img{
+                width: 40px;
+                transition: all 0.5s linear ease-in-out;
+            }
+            
+        }
+        &-details{ padding-top: 30px;
+            &--settings{
+                position: absolute;
+                bottom: 20px;
+                width: 90%;
+            }
+            &-content{
+                &-item{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-top: 10px;
+                    opacity: 0.7;
+                    padding: 5px 12px;
+                    border-radius: 4px;
+                    &:hover{
+                        opacity: 1;
+                        transition: all 0.4s ease-in-out;
+                        background: $form_signIN_color;
+                    }
+
+                    a{
+                        color: $white !important;
+                        text-decoration: none;
+                    }
+                    &-image{
+                        width: 25px;
+                        height: 25px;
+                        // margin-top: 10px;
+
+                        &--dashboard{
+                            width: 25px;
+                            height: 25px;
+                        }
+                        &--settingImage{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    &-name{
+                        margin-top: 15px;
+                        margin-left: 20px;
+                        @include card-paragraph;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    &--mainPart{
+        padding: 120px 0 60px;
+        z-index: 10;
+        
+        @media (min-width:767px) and (max-width:871.98px){
+            padding-left: 55px;
+        }
+        @media (min-width:991px) and (max-width:1119.98px){
+            padding-left: 55px;
+        }
+        @media (min-width:1200px) and (max-width:1305.98px){
+            padding-left: 55px;
+        }
+        @media (min-width:1400px) and (max-width:1479.98px){
+            padding-left: 55px;
+        }
+    }
+    &--cards{
+        outline: none;
+        border: 2px solid transparent;
+        box-shadow: 0 0px 3px 0px $toggle_color_opacity;
+        border-radius: 4px;
+        padding: 0 10px;
+        // margin: 20px 0;
+        @media (max-width:767.98px){
+            
+        }
+
+        &-twitter{
+            outline: none;
+            border: 2px solid transparent;
+            box-shadow: 0 0px 3px 0px $toggle_color_opacity;
+            position: relative;
+
+            &-title{
+                @include card-paragraph;
+                
+                // position: sticky;
+                top: 0;
+                background: white;
+                
+                height: 40px;
+                padding: 25px 20px 0 20px;
+                z-index: 2;
+                span{
+                    color: $light_gray;
+                    font-weight: 500;
+                }
+            }
+            @media(max-width:991.98px){
+                margin-top: 20px;
+            }
+            
+        }
+        @media(max-width:767.98px){
+            margin-top: 20px;
+        } 
+    }
+
+    &__Intro{
+        @include flexbetween;
+        &-title{
+            @include secondary_heading;
+            font-size: 32px;
+            font-weight: 400;
+            
+        }
+        &-icon{
+            width: 30px;
+            height: 30px;
+            @include flexcenter;
+            
+            &-setting{
+                @include flexcenter;
+                img{
+                    width: 60%;
+                }
+            }
+            &:hover {
+                background: $light_ferza;
+                
+            }
+        }
+    }
+    &__manager{
+        @include flexleft;
+        gap: 15px;
+        &-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        &-identity{
+            &-post{
+                @include card-paragraph;
+                font-weight: 500;
+                font-size: 12px
+            }
+            &-name{
+                margin-top: 10px;
+                @include secondary-paragraph;
+                font-weight: 500;
+                font-size: 14px;
+                
+            }
+        }
+    }
+    &--midPart{
+        margin-top: 30px;
+        display: flex;
+        @media (max-width:767.98px){
+            margin-top: 20px;
+        }
+       
+       
+    }
+    &__kpi{
+        &-title{
+            margin-top: 10px; 
+            @include card-paragraph;
+            font-weight: 400;
+            opacity: 0.6;
+        }
+        &-contents{
+            margin-top: 20px;
+            &-items{
+                margin-top: 20px;
+                &-name{
+                    @include card-paragraph;
+                    font-weight: 500;
+                    opacity: 0.8;
+                }
+                &-values{
+                    @include flexbetween;
+
+                    .assignedValue{
+                        @include secondary_heading;
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                    .resultValue{
+                        @include secondary-paragraph;
+                        font-weight: 500;
+                        color: $green;
+                        margin-left: 5px;
+                        &--red{
+                            @include secondary-paragraph;
+                            font-weight: 500;
+                            color: $red;
+                            margin-left: 5px;
+                        }
+                    }
+                    &-icon{
+                        width: 20px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                &-time{
+                    font-size: 12px;
+                    font-weight: 300;
+
+                }
+            }
+        }
+    }
+    &--textblur{
+        @include card-paragraph;
+        // font-weight: 500;
+        opacity: 0.7;
+        margin-top: 10px; 
+        &-numbers{
+            font-size: 18px;
+            font-weight: 800;
+            opacity: 1 !important;
+            color: $black;
+            margin-right: 10px;
+        }
+    }
+    &__briefing{
+        &-subtitle{
+            @include card-paragraph;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+        &-icon{
+            width: 80px;
+            &-image{
+                width: 100%;
+            }
+        }
+    }
+    &__twitter{
+        // height: 60vh;
+        // position: relative;
+        
+    
+        &-footer{
+            @include card-paragraph;
+            font-weight: 400;
+            // position: sticky;
+            height: 50px;
+            background: $white;
+            bottom: 0;
+            // padding-bottom: 10px;
+            @include flexcenter;
+            letter-spacing: normal;
+            a{
+                cursor: pointer;
+                pointer-events: none;
+                margin: 0 5px;
+                font-weight: 600;
+            }
+            &-image{
+                margin-left: 10px;
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+            }
+        }
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track{
+            box-shadow: inset 0 0 3px 1px $gray;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            // height: 20px;
+            background: $scrolbar;
+            width: 9px;
+            border-radius: 10px;
+            &:hover{
+                background: $scrolbar-hover;
+            }
+        }
+        
+        &-content{
+            overflow-y: scroll;
+            height: 75vh;
+            margin-top: 20px;
+            padding: 0 12px  !important;
+          
+            &-item{
+                margin-top: 20px;
+                padding-bottom: 20px !important;
+                border-bottom: 1px solid #969aab33;
+                
+                &-image{
+                    width: 35px;
+                    img{
+                        width: 100%
+                    }
+                }
+                &-brief{
+                    &-name{
+                        @include card-paragraph;
+                        font-weight: 500;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        white-space: normal;
+
+                        span{
+                            font-size: 12px;
+                            letter-spacing: 0 !important;
+                            // white-space: nowrap;
+                        }
+                    }
+                    &-text{
+                        @include card-paragraph;
+                        margin-top: 10px;
+                    }
+                    &-image{
+                        margin-top: 10px;
+                        width: 95%;
+                        img{
+                            width: 100%;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__news{
+        margin-top: 30px;
+        &--link{
+            text-decoration: none;
+            color: $black !important;
+        }
+        &-title{
+            @include secondary_heading;
+            font-size: 24px;
+        }
+        &-content{
+            margin-top: 30px;
+            &-item{
+                margin-top: 20px;
+                &-details{
+                    @include flexleft;
+                    gap: 20px;
+                    @media (max-width:767.98px){
+                        display: block;
+                        
+                    }
+                    &-image{
+                        width: 30%;
+                        margin: -2px;
+                        @media (max-width:767.98px){
+                            width: 100%;
+                        }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            min-height: 119px;
+                            border-radius: 3px 0 0 3px;
+                            @media (max-width:767.98px){
+                                width: 101%;
+                            }
+                            
+                        }
+                    }
+                    &-text{
+                        padding: 15px;
+                        &-heading{
+                            text-overflow: ellipsis;
+                            @include secondary-paragraph;
+                            font-weight: 500;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+
+    <!-- accountformbody section start -->
+    <section class="accountformbody--forget">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="accountCreation">
+                        <div class="accountCreation__title">
+                            Welcome Back
+                        </div>
+                        <div class="accountCreation__image">
+                            <img class="accountCreation__image-item--password" src="../assets/image/Earth_2.png" alt="Personal information">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="formItem">
+                        <div class="formItem__title">
+                            Forget Your Password
+                        </div>
+    
+                        <!-- form start -->
+                        <form class="formItem__body" name="formValidation" id="formValidation" onsubmit="return false">             
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Email *</div>
+                                <input class="formItem__body-item-input" type="email" id="Email" name="email" required>
+                                <div class="formItem__body-item-forget"><a href="">Back to Login</a></div>
+                            </div>               
+                                                                               
+                         
+                            <div class="formItem__body-item  input-row">
+                                <button class="formItem__body-item-button--signIn" id="btngoPasswordchange" type="submit" onclick="passwordCorrection()" > Submit </button>
+                            </div>
+                            
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- bootstrap js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery js -->
+
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+    <script src="../js/forgetPassword.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+ 
+    <!-- header section starts -->
+    <section  class="header">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid header__navbar">
+            
+            <!-- travel image for upward of tab -->
+            <a class="navbar-brand header__navbar-title d-none d-md-block d-lg-block" href="#"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web"></a>
+            
+            <!-- offcanvas button start -->
+            <button class="navbar-toggler  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span> 
+              </button>
+              <!-- offcanvas button end -->
+
+              <!-- offcanvas menu start -->
+              <div class="offcanvas offcanvas-start d-block d-sm-block d-md-none header__offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title header__navbar-title " id="offcanvasExampleLabel">
+                    <img class="img-fluid" src="../assets/image/travel.png" alt="">
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body overflow-visible">
+                    <ul class="navbar-nav header__navbar-content ">
+                        <li class="nav-item my-2">
+                            <a class="header__navbar-content-link--offcanvas " href="">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="">Workplace</a>
+                        </li>
+                        <li class="nav-item header__navbar-content-link--offcanvas">Billing</li>
+                        <li class="nav-item header__navbar-content-link--offcanvas">Support</li>
+                        <li class="nav-item header__navbar-content-link--offcanvas">User</li>
+                        <li class="nav-item header__navbar-content-link--offcanvas">Affiliates</li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="">Settings</a>
+                        </li>
+
+                        <div class="header__offcanvas-menuMain">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pricing
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Platform</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Resources
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Glossary</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Company
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about us.html">About Us</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        
+
+                    </ul>
+                  
+                </div>
+              </div>
+              <!-- offcanvas menu for mobile view end -->
+
+            <!-- travel image for lower than tab -->
+            <a class="navbar-brand header__navbar-title--dashboard d-sm-block d-md-none d-lg-none d-xlg-none" href="#"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web"></a>
+            
+            <!-- navbar items for from tab to dextop view-->
+            <div class="collapse navbar-collapse header__navbar-collapse d-none d-md-none d-lg-block" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0  text-end header__navbar-content">
+                
+
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pricing
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Platform</a></li>
+                    
+                    </ul>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Glossary</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Company
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about us.html">About Us</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex header__navbar-button" role="search">                                                     
+                    <a href="" class="header__navbar-button-content--secondary me-2">Dashboard</a>
+                    <a href="" class="header__navbar-button-content--primary">Workplace</a>
+                </form>
+
+            <!-- side menu bar start-->
+            <!-- <div class="header__navbar-user">
+                <div class="header__navbar-user-identity" id="userIdentity" onclick="showIdentity()">
+                    <img class="img-fluid header__navbar-user-identity-image" src="../assets/image/User_2.png" alt="user">
+                </div>
+
+                <div class="card header__navbar-user-card" id="userInfo">
+                    <div class="card-body"> -->
+
+                        <!-- <div class="header__navbar-user-card-close" id="userClose">X</div> -->
+
+                        <!-- <div class="header__navbar-user-card-image">
+                            <img src="../assets/image/User_2.png" alt="User Photo">
+                            <div class="header__navbar-user-card-image-pen" id="penSetting">
+                                <img src="../assets/image/pen.png" alt="Settings">
+                            </div>
+                            <div class="header__navbar-user-card-image-editProfile"> edit your profile</div>
+                        </div>
+                        <div class="header__navbar-user-card-name">User Name</div>
+                        <div class="header__navbar-user-card-mail">user@example.com</div>
+                        <div class="header__navbar-user-card-signOut">
+                            <a href="../index.html">Sign Out</a>
+                        </div>
+                        <div class="header__navbar-user-card-link">                       
+                            <div class="header__navbar-user-card-link-item">Privacy Policy</div>
+                            <div class="header__navbar-user-card-link-item">Terms of service</div>
+                            
+                        </div> -->
+                    <!-- </div>
+                </div>
+            </div> -->
+            <!-- side menu bar end -->               
+                               
+            </div>
+                        <!-- side menu bar start-->
+                        <div class="header__navbar-user">
+                            <div class="header__navbar-user-identity" id="userIdentity" onclick="showIdentity()">
+                                <img class="img-fluid header__navbar-user-identity-image" src="../assets/image/User_2.png" alt="user">
+                            </div>
+            
+                            <div class="card header__navbar-user-card" id="userInfo">
+                                <div class="card-body">
+            
+                                    <!-- <div class="header__navbar-user-card-close" id="userClose">X</div> -->
+            
+                                    <div class="header__navbar-user-card-image">
+                                        <img src="../assets/image/User_2.png" alt="User Photo">
+                                        <div class="header__navbar-user-card-image-pen" id="penSetting">
+                                            <a href="../pages/settings.html"><img src="../assets/image/pen.png" alt="Settings"></a>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="header__navbar-user-card-name">User Name</div>
+                                    <div class="header__navbar-user-card-mail">user@example.com</div>
+                                    <div class="header__navbar-user-card-signOut">
+                                        <a href="../index.html">Sign Out</a>
+                                    </div>
+                                    <div class="header__navbar-user-card-link">                       
+                                        <div class="header__navbar-user-card-link-item">Privacy Policy</div>
+                                        <div class="header__navbar-user-card-link-item">Terms of service</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- side menu bar end --> 
+            
+  
+        </nav>
+    </section>
+    <!-- header section end -->
+    
+
+    <!-- bs js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery js -->
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+
+     <!-- custom js -->
+     <script src="../js/userDisplay.js"></script>
+
+     <!-- headerscroll -->
+     <script src="../js/headerscrolling.js"></script>
+</body>
+</html>

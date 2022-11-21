@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+
+    <!-- accountformbody section start -->
+    <section class="accountformbody">
+        <div class="accountQuestion">
+            <div class="accountQuestion__basic">Have an organization already?</div>
+            <a class="accountQuestion__button" href="./formSignin.html">Sign In</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="accountCreation">
+                        <div class="accountCreation__title">
+                            Share Your Details Information
+                        </div>
+                        <div class="accountCreation__image">
+                            <img class="accountCreation__image-item" src="../assets/image/Personal_info.png" alt="Personal information">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="formItem">
+                        <div class="formItem__title">
+                            Please Share Your Information
+                        </div>
+                        <div class="formItem__steps" id="Step1"> Step 2/3</div>
+    
+                        <!-- form start -->
+                        <form class="formItem__body" name="formValidation" id="formValidation" onsubmit="return false">
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">first Name *</div>
+                                <input class="formItem__body-item-input" type="text" id="NameFirst" name="nameFirst" required>
+                            </div>
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Last Name *</div>
+                                <input class="formItem__body-item-input" type="text" id="NameLast" name="nameLast" required>
+                            </div>
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Address *</div>
+                                <input class="formItem__body-item-input--address" type="text" id="Address" name="address" required>
+                            </div>
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Contact Number *</div>
+                                <input class="formItem__body-item-input" type="text" id="Phone" name="phone" required>
+                            </div>
+                           
+                            <div class="formItem__body-item input-row">
+                                <div class="formItem__body-item-name">Country *</div>
+                                <input class="formItem__body-item-input" type="text" id="Country" name="country" required>
+                            </div>
+                            
+                            
+                            <div class="formItem__body-item input-row">
+                                <input class="formItem__body-item-input--checkbox" type="checkbox" name="checkbox" id="Checkbox" required> 
+                            
+                                <div class="formItem__body-item-name">I have read and accept the <a href="">Terms and Condition</a> and <a href="">Privacy Policy</a></div> 
+                            </div>
+                            <div class="formItem__body-item  input-row">
+                                <button class="formItem__body-item-button" id="btnPassword" type="submit" onclick="createPassword()"> Next </button>
+                            </div>
+                            
+                        </form>
+                            <!-- form end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- accountformbody section end -->
+
+
+    <!-- toggle js
+    <script src="../js/toggle.js"></script> -->
+    
+    <!-- bootstrap js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery js -->
+
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+    <script src="../js/formValidate.js"></script>
+
+    <script src="../js/gotostep3.js"></script>
+
+     <!-- header scrolling -->
+     <script src="../js/headerscrolling.js"></script>
+
+</body>
+</html>

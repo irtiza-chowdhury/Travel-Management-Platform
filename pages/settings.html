@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <!-- Roboto font -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');</style>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrapcss -->
+    <link rel="stylesheet" href="../assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+     <!-- dashboard header  section starts -->
+     <section id="Header" class="header">
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid header__navbar">
+            
+            <!-- travel image for upward of tab -->
+            <a id="logoTitle" class="navbar-brand header__navbar-title d-none " href="./index-login.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web"></a>
+            
+            <!-- offcanvas button start -->
+            <button class="navbar-toggler  header__navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span> 
+              </button>
+              <!-- offcanvas button end -->
+
+              <!-- offcanvas menu start -->
+              <div class="offcanvas offcanvas-start d-block d-sm-block d-md-none header__offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title header__navbar-title " id="offcanvasExampleLabel">
+                    <a href="./index-login.html"><img class="img-fluid" src="../assets/image/travel.png" alt=""></a>
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body overflow-visible">
+                    <ul class="navbar-nav header__navbar-content ">
+                        <li class="nav-item my-2">
+                            <a class="header__navbar-content-link--offcanvas " href="./dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./dashboard.html">Workplace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">Billing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./coming-soon.html">Office 365</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__navbar-content-link--offcanvas" href="./settings.html">Settings</a>
+                        </li>
+
+                        <div class="header__offcanvas-menuMain">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pricing
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Resources
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle header__navbar-content-link--offcanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Company
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                                      <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        
+
+                    </ul>
+                  
+                </div>
+              </div>
+              <!-- offcanvas menu for mobile view end -->
+
+            <!-- travel image for lower than tab -->
+            <a class="navbar-brand header__navbar-title--dashboard d-sm-block d-md-none d-lg-none d-xlg-none" href="./index-login.html"><img class="img-fluid" src="../assets/image/travel.png" alt="travel web" id="logoTitleMobile"></a>
+            
+            <!-- navbar items for from tab to dextop view-->
+            <div class="collapse navbar-collapse header__navbar-collapse d-none d-md-none d-lg-block" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0  text-end header__navbar-content" id="menuOptions">
+                
+
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemPrice">
+                    Pricing
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/pricePlatform.html">Plan</a></li>
+                    
+                    </ul>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemResource">
+                    Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/faqs.html">FAQs</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/tutorial.html">Tutorials</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/glossary.html">Annex</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle header__navbar-content-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="optionItemCompany">
+                    Company
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/about-us.html">About Us</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/career.html">Career</a></li>
+                    <li><a class="dropdown-item header__navbar-content-link-item" href="../pages/media.html">Media</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex header__navbar-button" role="search">                                                     
+                    <a href="./dashboard.html" class="header__navbar-button-content--secondary me-2">Dashboard</a>
+                    <a href="./dashboard.html" class="header__navbar-button-content--primary">Workplace</a>
+                </form>                                         
+            </div>
+            
+            <!-- side menu bar start-->
+            <div class="header__navbar-user">
+                <div class="header__navbar-user-identity" id="userIdentity" onclick="showIdentity()">
+                    <img class="img-fluid header__navbar-user-identity-image" src="../assets/image/User_2.png" alt="user">
+                </div>
+
+                <div class="card header__navbar-user-card" id="userInfo">
+                    <div class="card-body">
+
+                        <!-- <div class="header__navbar-user-card-close" id="userClose">X</div> -->
+
+                        <div class="header__navbar-user-card-image">
+                            <img src="../assets/image/User_2.png" alt="User Photo">
+                            <div class="header__navbar-user-card-image-pen" id="penSetting">
+                                <a href="../pages/settings.html"><i class="fa-solid fa-pen"></i></a>
+                                <div class="position-relative">
+                                    <div class="header__navbar-user-card-image-editProfile">Edit profile</div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="header__navbar-user-card-name">User Name</div>
+                        <div class="header__navbar-user-card-mail">user@example.com</div>
+                        <div class="header__navbar-user-card-signOut">
+                            <a href="../index.html">Sign Out</a>
+                        </div>
+                        <div class="header__navbar-user-card-link">                       
+                            <div class="header__navbar-user-card-link-item">Privacy Policy</div>
+                            <div class="header__navbar-user-card-link-item">Terms of service</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- side menu bar end --> 
+  
+        </nav>
+    </section>
+    <!-- dashboard  header section end -->
+
+    <!-- sidebar code start -->
+    <section class="dashboardBody">
+        <div class="dashboardBody__sideBar d-none d-sm-none d-md-block">
+            <div class="dashboardBody__sideBar-title">
+                <a href="./index-login.html"><img src="../assets/image/travel.png" alt="travel logo"></a>
+            </div>
+            <div class="dashboardBody__sideBar-details">
+                <ul class="dashboardBody__sideBar-details-content list-unstyled">
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <a href="./dashboard.html">
+                            <img class="dashboardBody__sideBar-details-content-item-image--dashboard" src="../assets/image/dashboard_1.png" alt="dashboard">
+                        <span class="dashboardBody__sideBar-details-content-item-name">Dashboard</span>
+                        </a>
+                        
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/clock.png" alt="Billing">
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">Billing</a>
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/headphone_white.png" alt="support">
+                        <!-- <span class="dashboardBody__sideBar-details-content-item-name"></span> -->
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">Support</a>
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/dashboard_2.png" alt="Workplace">
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./dashboard.html">Workplace</a>
+                        <!-- <span class="dashboardBody__sideBar-details-content-item-name"></span> -->
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/user_3.png" alt="User">
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">User</a>
+                    </li>
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <img class="dashboardBody__sideBar-details-content-item-image" src="../assets/image/360deg.png" alt="Affiliates">
+                    
+                        <a class="dashboardBody__sideBar-details-content-item-name" href="./coming-soon.html">Office 365</a>  
+                    </li>
+                </ul>
+            </div>
+            <div class="dashboardBody__sideBar-details--settings">
+                <ul class="dashboardBody__sideBar-details-content list-unstyled">
+                    <li class="dashboardBody__sideBar-details-content-item">
+                        <a href="./settings.html">
+                            <img class="dashboardBody__sideBar-details-content-item-image--settingImage" src="../assets/image/setting.jpg" alt="Settings">
+                            <span class="dashboardBody__sideBar-details-content-item-name">Settings</span>
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- sidebar code end -->
+
+    <!-- changeInfo section start -->
+    <section class="changeInfo">
+        <!-- changeinfo items start -->
+        <div class="container">
+            <div class="changeInfo__identityUser">
+                <div class="changeInfo__identityUser-details">
+                    <!-- <div class="changeInfo__identityUser-details-image">
+                        <img src="../assets/image/User_2.png" alt="" class="img-fluid">
+                        <input type="file" class="changeInfo__identityUser-details-image-uploader">
+                    </div> -->
+
+                    <!-- useridentity -->
+                    <div class="changeInfo__identityUser-details-image">
+                        <img src="../assets/image/User_2.png" alt="" class="img-fluid">
+                        <!-- Final Modal start -->
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="changeInfo__identityUser-details-image-icon" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-camera changeInfo__identityUser-details-image-icon-item"></i>
+                        </button>
+                
+                        <!-- Modal -->
+                        <div class="modal fade changeInfo__identityUser-details-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class=" modal-dialog modal-dialog-centered">
+                                <div class="modal-content changeInfo__identityUser-details-modal-mainbody">
+                                    <div class="modal-header border-0">
+                                    <h1 class="modal-title changeInfo__identityUser-details-modal-mainbody-title" id="exampleModalLabel">Change Your Picture</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div> 
+                                    <div class="modal-body changeInfo__identityUser-details-modal-mainbody-item">
+                                        <div id="app"></div>
+                                        <input type="file" id="fileInput" multiple name="file" hidden />
+                                        <div class="uploader changeInfo__identityUser-details-modal-mainbody-item-uploader" id="fileSelect">
+                                        <div id="content" class="content">
+                                            <div class="m-auto text-center" id="content-action">
+                                                <i class="fa-solid fa-file-arrow-up changeInfo__identityUser-details-modal-mainbody-item-uploader-icon"></i>
+                                                <p>
+                                                    Upload Images
+                                                </p>
+                                            </div>  
+                                        </div>
+                                        </div>
+                                        <div id="oit" class="other-image-thumbnails"></div>
+                                    </div>
+                                    <div class="modal-footer changeInfo__identityUser-details-modal-mainbody-footer">
+                                    <button type="button" class="changeInfo__identityUser-details-modal-mainbody-footer-close" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="changeInfo__identityUser-details-modal-mainbody-footer-save">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Final Modal end -->
+                    <div class="changeInfo__identityUser-details-welcome">Wecome</div>
+                    <div class="changeInfo__identityUser-details-name">Mr. James Rodriguez</div>
+                    <div class="changeInfo__identityUser-details-post">Manage your settings and preferred language</div>
+                </div>
+            </div>
+            <div class="row changeInfo__cards">
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card changeInfo__component">
+                        <div class="card-body">
+                            <div class="changeInfo__component-title">
+                                <div class="changeInfo__component-title-name">General Settings</div>
+                                <div class="changeInfo__component-title-button">
+                                    <button type="button" id="btnChangeGeneral" >Change</button>
+                                </div>
+                                <div class="changeInfo__component-title-button--cancel" id="btnCancelGeneral">
+                                    <!-- <button type="button" id="btnFirstname">Cancel</button> -->
+                                    <span >Cancel</span>
+                                </div>
+                                <div class="changeInfo__component-title-button--save" id="btnSaveGeneral">
+                                    <!-- <button type="button" id="btnFirstname">Save</button> -->
+                                    <span >Save</span>
+                                </div>
+                            </div>
+                            <div class="changeInfo__component-items">
+                            <div class="changeInfo__component-items-name"> Legal Name</div>
+                            <div class="changeInfo__component-items-existing" id="existingOrganisation">TD Travel Internatioinal</div>
+                            <div class="changeInfo__component-items-input">
+                                <input class="changeInfo__component-items-input-space" type="text" id="NewOrganisationName" required placeholder="TD Travel Internatioinal">
+                            </div>
+                            <div class="changeInfo__component-items-name">Legal Address</div>
+                            <div class="changeInfo__component-items-existing" id="existingAddress">New Work</div>
+                            <div class="changeInfo__component-items-input">
+                                <input class="changeInfo__component-items-input-space" type="text" id="NewAddress" required placeholder="New Work">
+                            </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card changeInfo__component">
+                        <div class="card-body">
+                            <div class="changeInfo__component-title">
+                                <div class="changeInfo__component-title-name">Personal Settings</div>
+                                <div class="changeInfo__component-title-button">
+                                    <button type="button" id="btnChangePersonal">Change</button>
+                                </div>
+                                <div class="changeInfo__component-title-button--cancel" id="btnCancelPersonal">
+                                    <!-- <button type="button" id="btnFirstname">Cancel</button> -->
+                                    <span >Cancel</span>
+                                </div>
+                                <div class="changeInfo__component-title-button--save" id="btnSavePersonal">
+                                    <!-- <button type="button" id="btnFirstname">Save</button> -->
+                                    <span >Save</span>
+                                </div>
+                            </div>
+                            <div class="changeInfo__component-items">
+                            <div class="changeInfo__component-items-name"> Name</div>
+                            <div class="changeInfo__component-items-existing" id="existingName">James Rodriguez</div>
+                            <div class="changeInfo__component-items-input">
+                                <input class="changeInfo__component-items-input-space" type="text" id="NewNameFirst"  required placeholder="James">
+                            </div>
+                            <div class="changeInfo__component-items-input">
+                                <input class="changeInfo__component-items-input-space" type="text" id="NewNameLast"  required placeholder="Rodriguez">
+                            </div>
+                            <div class="changeInfo__component-items-name">Eamil</div>
+                            <div class="changeInfo__component-items-existing" id="existingMail">james@example.com</div>
+                            <div class="changeInfo__component-items-input">
+                                <input class="changeInfo__component-items-input-space" type="email" id="NewMail"  required placeholder="james@example.com">
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card changeInfo__component">
+                        <div class="card-body">
+                            <div class="changeInfo__component-title">
+                                <div class="changeInfo__component-title-name">Language Settings</div>
+                                <div class="changeInfo__component-title-button">
+                                    <button type="button" id="btnChangeLanguage">Change</button>
+                                </div>
+                            </div>
+                            <div class="changeInfo__component-items">
+                                <div class="changeInfo__component-items-name">Current Language</div>
+                                <div class="changeInfo__component-items-existing">English (US)</div>
+                                
+                                <div class="card dashboardBody--cards changeInfo__component-items-cardlanguage" id="LanguageCard">
+                                    <div class="card-body">
+                                      <div class="changeInfo__component-items-cardlanguage-option">EN English (US)</div>
+                                      <div class="changeInfo__component-items-cardlanguage-option">EN English (GB)</div>
+                                    </div>
+                                  </div>
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="card changeInfo__component">
+                        <div class="card-body">
+                            <div class="changeInfo__component-title">
+                                <div class="changeInfo__component-title-name">Password Settings</div>
+                                <div class="changeInfo__component-title-button">
+                                    <button type="button" id="btnChangePassword">Change</button>
+                                </div>
+                                <div class="changeInfo__component-title-button--cancel" id="btnCancelPassword">
+                                    <!-- <button type="button" id="btnFirstname">Cancel</button> -->
+                                    <span >Cancel</span>
+                                </div>
+                                <div class="changeInfo__component-title-button--save" id="btnSavePassword">
+                                    <!-- <button type="button" id="btnFirstname">Save</button> -->
+                                    <span >Save</span>
+                                </div>
+                            </div>
+                            <div class="changeInfo__component-items">
+                                <div class="changeInfo__component-items-name"> Password</div>
+                                <div class="changeInfo__component-items-existing" id="existingPassword">**********</div>
+                                <div class="changeInfo__component-items-input">
+                                    <input class="changeInfo__component-items-input-space" type="password" id="newPassword" required placeholder="New Password">
+                                </div>
+                                <div class="changeInfo__component-items-input">
+                                    <input class="changeInfo__component-items-input-space" type="password" id="NewconfirmPassword"  required placeholder="Confirm Password">
+                                </div>
+
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- changeinfo items start -->
+    </section>
+    <!-- changeInfo section end -->
+
+
+    <!-- image uploader open -->
+    <script src="../js/Open_ImageUploader.js"></script>
+    <!-- user iderntity show hide -->
+    <script src="../js/User_identity.js"></script>
+
+    <!-- bs js -->
+    <script src="../assets/boostrap_js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="../assets/jquery_js/jquery-3.6.0.min.js"></script>
+    
+    <!-- custom user display js -->
+    <script src="../js/userDisplay.js"></script>
+
+    <!-- header scrolling -->
+    <script src="../js/headerscrolling.js"></script>
+
+
+
+
+</body>
+</html>
