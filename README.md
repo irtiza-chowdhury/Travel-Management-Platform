@@ -1,7 +1,7 @@
 # Travel-Management-Platform
  
  
-Live link:https://travel-management-platform.vercel.app/
+Live site URL: https://travel-management-platform.vercel.app/
  
 Dextop View
 
